@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-livestyle-extension="available">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="Search and buy over 380,000 chemical and reagent products on KACHANCHEM database. Check budget for custom synthesis to facilitate your research." name="description">
+    <meta content="chemical, order, shipment, CAS, quotation, prie, incoterm, supplier" name="keywords">
+    <title>KACHANCHEM</title>
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/themes.css" rel="stylesheet" type="text/css">
+    <link href="../css/user.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../js/themes.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/font.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="index lang_en w_1200" cz-shortcut-listen="true">
+    <script src="../js/fixed.toper.js"></script>
+    <script type="text/javascript">
+    $(window).resize(function() { $(window).webDisplay(0); });
+    $(window).webDisplay(0);
+    </script>
+    <div class="global_shopping_cart_bg"></div>
+    <div class="global_shopping_cart_box"></div>
+    <div class="global_bom_box_bg"></div>
+    <div class="global_bom_box"></div>
+    <div class="ueeshop_responsive_header">
+        <div class="header">
+            <h1 class="logo fl pic_box"><a href="../cn/index.html"><img src="../img/logo.png" alt="KACHANCHEM"><em></em></a></h1>
+            <div class="func">
+                <div class="btn search_btn"></div>
+                <div class="btn menu_btn"></div>
+            </div>
+        </div>
+        <div class="resp_search_box trans">
+            <div class="close_btn"><span></span></div>
+            <div class="clear"></div>
+            <div class="search_form" method="get">
+                <input type="text" class="search_text1" name="Keyword" placeholder="Search Our Catalog">
+                <input type="submit" class="sub_btn1" value="">
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="language trans">
+            <div class="close_btn"><span></span></div>
+            <div class="content">
+            </div>
+        </div>
+        <div class="nav trans">
+            <div class="list ">
+                <a href="../cn/index.html" class="title">首页</a>
+            </div>
+            <div class="list has_sec">
+                <a href="../cn/products.html" class="title">产品</a>
+            </div>
+            <div class="list ">
+                <a href="../cn/advantage-products.html" class="title">优势产品</a>
+            </div>
+            <div class="list ">
+                <a href="../cn/logistics-centre.html" class="title">物流中心</a>
+            </div>
+            <div class="list ">
+                <a href="../cn/about.html" class="title">关于我们</a>
+            </div>
+            <div class="list ">
+                <a href="../cn/contactus.html" class="title">联系我们</a>
+            </div>
+        </div>
+        <div class="son_nav trans"></div>
+        <div class="nav_bg"></div>
+    </div>
+    <div class="ueeshop_responsive_header header_blank"></div>
+    <script language="javascript">
+        $('.ueeshop_responsive_header .menu_btn').on('click',function(){
+        if($(this).hasClass('on')){
+            $(this).removeClass('on');
+            $('.ueeshop_responsive_header').find('.nav, .nav_bg, .son_nav').removeClass('on');
+            $('body').attr('style', '');
+        }else{
+            $(this).addClass('on');
+            $('.ueeshop_responsive_header').find('.nav, .nav_bg').addClass('on');
+            $('body').css({'overflow':'hidden'});
+        }
+        });
+        $('.ueeshop_responsive_header .language_btn').on('click',function(){
+            if($(this).hasClass('on')){
+                $(this).removeClass('on');
+                $('.ueeshop_responsive_header .language').removeClass('on');
+                $('body').attr('style','');
+            }else{
+                $(this).addClass('on');
+                $('.ueeshop_responsive_header .language').addClass('on');
+                $('.ueeshop_responsive_header').find('.menu_btn, .nav_bg, .nav, .son_nav').removeClass('on');
+                $('body').css({'overflow':'hidden'});
+            }
+        });
+        $('.ueeshop_responsive_header .search_btn').on('click',function(){
+            if($(this).hasClass('on')){
+                $(this).removeClass('on');
+                $('.ueeshop_responsive_header .resp_search_box').removeClass('on');
+            }else{
+                $(this).addClass('on');
+                $('.ueeshop_responsive_header .resp_search_box').addClass('on');
+                $('.ueeshop_responsive_header').find('.menu_btn, .nav_bg, .nav, .son_nav').removeClass('on');
+                $('body').attr('style', '');
+            }
+        });
+        $('.ueeshop_responsive_header .nav_bg').on('click',function(){
+            $(this).removeClass('on');
+            $('.ueeshop_responsive_header').find('.nav, .son_nav, .menu_btn').removeClass('on');
+            $('body').attr('style', '');
+        });
+        $('.ueeshop_responsive_header .resp_search_box .close_btn span').on('click',function(){
+            $(this).parents('.resp_search_box').removeClass('on');
+            $('.ueeshop_responsive_header .search_btn').removeClass('on');
+        });
+        $('.ueeshop_responsive_header .language .close_btn span').on('click',function(){
+            $(this).parents('.language').removeClass('on');
+            $('.ueeshop_responsive_header .language_btn').removeClass('on');
+        })
+        $('.ueeshop_responsive_header .nav .list .title').on('click', function (e){
+            $('.ueeshop_responsive_header .hasub .sub').removeClass('on');
+            $('.ueeshop_responsive_header .son_nav').html($(this).parents('.list').find('.sub').html()).addClass('on');
+        });
+        $('.ueeshop_responsive_header .son_nav').on('click','.cate_close', function (e){
+            $('.ueeshop_responsive_header .son_nav').removeClass('on');
+        })
+        $('.ueeshop_responsive_header .son_nav').on('click', '.son_nav_title',function(){
+            $(this).parent('.item').find('.third_nav').toggle('on');
+            $(this).toggleClass('on');
+        });
+    </script>
+    <div id="header">
+        <div class="header_in">
+            <h1 class="logo fl pic_box"><a href="../cn/index.html"><img src="../img/logo.png" alt="KACHANCHEM"><em></em></a></h1>
+            <div class="hedaer_nav">
+                <div class="default_nav_style">
+                    <div class="n_item">
+                        <a href="../cn/index.html">首页</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/products.html" title="products">产品</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/advantage-products.html" title="advantage-products">优势产品</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/logistics-centre.html" title="logistics-centre">物流中心</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/about.html" title="About Us">关于我们</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/contactus.html" title="Contact Us">联系我们</a>
+                    </div>
+                </div>
+                <script>
+                    $('.small_nav_sec').parent().css({'position':'relative','overflow':'visible'});
+                    $('.default_nav_style .n_item').hover(function(){
+                        $this=$(this);
+                        $this.find('.nav_sec').show().animate({'opacity':'1','margin-top':0},200);
+                        if(!$this.find('.nav_sec').hasClass('small_nav_sec')){
+                            $this.find('.nav_list>.clear').remove();
+                            $eq=parseInt(($this.find('.nav_sec_box').width()-$this.find('.nav_img').outerWidth(true))/$this.find('.nav_sec_item').outerWidth(true));
+                            $this.find('.nav_sec_item').each(function(index){
+                                if(index%$eq==($eq-1)){
+                                    $(this).after('<div class="clear"></div>');
+                                }
+                            });
+                        }
+                    },function(){
+                        $this=$(this);
+                        $this.find('.nav_sec').animate({'opacity':'0','margin-top':'30px'},0).hide();
+                    });
+                </script>
+            </div>
+            <div class="header_icon_list">
+                <div class="header_icon_item header_icon_search">
+                    <a href="javascript:void(0);"></a>
+                    <div class="header_search_form">
+                        <input type="text" class="text fl" placeholder="" name="name" notnull="" value="">
+                        <input type="submit" class="sub_btn fr" value="">
+                    </div>
+                </div>
+                <div class="header_icon_item header_icon_lang">
+                    <a href="../index.html"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="banner">
+        <div class="bxSlide-outter" style="overflow:hidden;margin-left:auto;margin-right:auto; width:1920px; max-width:100%; max-height:750px">
+            <script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+            <link href="../css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+            <div class="bx-wrapper index_banner" style="max-width: 1920px;">
+                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative;">
+                    <div class="bxslider_1" style="width: 415%; position: relative; transition-duration: 0s; transform: translate3d(-1930px, 0px, 0px);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="classification">
+        <div class="title">产品分类</div>
+        <div class="classification_list"></div>
+    </div>
+    <div style="width: 1400px;margin: 50px auto 170px;color: #0359b0;font-size: 50px;font-family: 'Robotoslab-Bold'; text-align: center; text-transform: uppercase;">我们应该把有限的资源放在少数人身上<br />优质产品</div>
+    <div class="visual_plugins_container ad_products" data-type="poster" data-mode="mode_152" data-location="3">
+        <div class="ly_parkone ly_poster_152" data-visual-id="276">
+            <div class="ly_parkone_title themes_box_title">优质产品</div>
+            <div class="ly_pro_category">
+                <div class="ly_categorybox t143_slide"></div>
+                <div class="ly_shopallbtn">
+                    <a class="" data-link="null" href="">查看</a>
+                </div>
+            </div>
+            <div class="ly_switchbtn">
+                <a href="javascript:;" class="ly_btn prev ly_leftbtn"></a>
+                <a href="javascript:;" class="ly_btn next ly_rightbtn"></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="ueeshop_responsive_article_feedback ">
+            <div class="article_feedback_title">
+                <div class="title">留言</div>
+                <span></span>
+                <div class="txt">如果您对我们有任何建议或问题，请联系我们.</div>
+            </div>
+            <form method="post" name="feedback" id="contact">
+                <div class="rows input_rows">
+                    <input type="text" class="input" id="first_name" name="first_name" placeholder="Please Enter First Name" size="30" maxlength="100">
+                    <font class="fc_red">*</font>
+                </div>
+                <div class="rows input_rows">
+                    <input type="text" class="input" id="last_name" name="last_name" placeholder="Please Enter Last Name">
+                    <font class="fc_red">*</font>
+                </div>
+                <div class="rows input_rows">
+                    <input type="text" class="input" id="phone" name="phone" placeholder="Please Enter Phone Number">
+                    <font class="fc_red">*</font>
+                </div>
+                <div class="rows input_rows">
+                    <input type="text" class="input" id="email" name="email" placeholder="Please Enter Email">
+                    <font class="fc_red">*</font>
+                </div>
+                <div class="rows input_rows" style="width: 100%;">
+                    <input type="text" class="input" id="company_name" name="company_name" placeholder="Please Enter Compny">
+                </div>
+                <div class="rows textarea_rows">
+                    <textarea name="message" id="message" class="form_area contents" placeholder="如果您对我们有任何建议或问题，请联系我们." notnull=""></textarea>
+                </div>
+                <input type="text" class="dn" id="agent" name="agent" style="display:none;">
+                <div class="clear"></div>
+                <div class="rows"><input name="Submit" type="button" class="form_button" value="Submit" id="bt_contact"></div>
+            </form>
+        </div>
+    </div>
+    <div class="win_alert" style="display:none;">
+        <div class="win_close"><button class="close">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">X</font>
+                </font>
+            </button></div>
+        <div class="win_top_tips">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Success</font>
+            </font>
+        </div>
+        <div class="win_tips">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Submitted Successfully!</font>
+            </font>
+        </div>
+        <div class="win_btns"><button class="btn btn_sure">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Confirm</font>
+                </font>
+            </button></div>
+    </div>
+    <div id="footer">
+        <div class="footer_copy">
+            <span>© KACHANCHEM All Rights Reserved.</span>
+        </div>
+    </div>
+    <input type="text" placeholder="Please input Product name or CAS No." class="prompt" onkeydown="javascript:if(event.keyCode==13) search_input(" .search_box="" input="" ');'="" autocomplete="off">
+    <script>
+    //获取banner
+    $.ajax({
+        url: BASE_URL + "/banners",
+        type: 'get',
+        dataType: 'json',
+        success: function(data) {
+            if (data.code == 0) {
+                var data = data.data.page_datas;
+                var tem = '';
+                for (var i = 0; i < data.length; i++) {
+                    tem += "<div class='bx-clone'><img src='"+ data[i].img_url +"' alt='2' width='100%'><div class='container'><div style='font-size: 70px;color: #fff; padding-bottom: 30px;'><p style='font-weight: bold;padding-top: 180px;'>" + data[i].title + "</p><p style=' margin-top: 10px;'>" + data[i].subtitle + "</p></div><div class='search search_box'><input type='text' placeholder='Please input Product name or CAS No.' class='prompt search_text2'  autocomplete='off' /> <i class='icon-search-big sub_btn2'></i><div class='results'></div></div></div></div>" 
+                }
+                $('.bxslider_1').html(tem)
+                $('.bxslider_1').bxSlider({ slideWidth: 1920, adaptiveHeight: true, mode: 'horizontal', pause: 4000, autoHover: true });
+            }
+        }
+    });
+    //获取产品分类
+    $.ajax({
+        url: BASE_URL + "/product_classify",
+        type: 'get',
+        dataType: 'json',
+        success: function(data) {
+            if (data.code == 0) {
+                var data = data.data.value;
+                var strVar = '';
+                for (var i = 0; i < data.length; i++) {
+                    if (i < 8) {
+                        strVar += "<div class=\"classification_item\">\n";
+                        strVar += "<a href=\"./products.html?classify=" + data[i] + "\" title=\"\"><img src=\"../img/index/" + i + ".png\" alt=\"\"><span>" + data[i] + "<\/span><\/a><\/div>";
+                    }
+                }
+                $('.classification_list').html(strVar)
+            }
+        }
+    });
+    //获取优势产品列表
+    $.ajax({
+        url: BASE_URL + "/products",
+        type: 'get',
+        dataType: 'json',
+        data: {
+            limit: 12,
+            page: 1,
+            is_advantage: 1,
+            classify: '',
+        },
+        success: function(data) {
+            if (data.code == 0) {
+                var data = data.data.page_datas;
+                var strVar = '';
+                for (var i = 0; i < data.length; i++) {
+                    strVar += "<div class=\"ly_cate_item fl on Poster-1\" data_url=\"./product-details.html?id=" + data[i].id + "\">\n";
+                    strVar += "                        <a href=\"./product-details.html?id=" + data[i].id + "\">\n";
+                    strVar += "                            <div class=\"item\">\n";
+                    strVar += "                                <div class=\"ovh\">\n";
+                    strVar += "                                    <img src=\"" + data[i].product_img_url + "\" class=\"img\">\n";
+                    strVar += "                                    <div class=\"desc\">\n";
+                    strVar += "                                        <p class=\"name\">" + data[i].name + "<\/p>\n";
+                    strVar += "                                        <p class=\"cas\">CAS:" + data[i].cas + "<\/p>\n";
+                    strVar += "                                    <\/div>\n";
+                    strVar += "                                <\/div>\n";
+                    strVar += "                            <\/div>\n";
+                    strVar += "                        <\/a>\n";
+                    strVar += "                    <\/div>\n";
+                }
+                $('.ly_categorybox').html(strVar)
+                $(".ly_poster_152[data-visual-id='276'] .ly_categorybox").visualSrcoll({
+                    "speed": "500",
+                    "count": 1,
+                    "model": "cycle",
+                    "auto": "1",
+                    "time": 5000,
+                    "slideFun": function() {
+                        let index = parseInt(this.index);
+                        let link = $(".ly_parkone .ly_pro_category .ly_categorybox .ly_cate_item[data-item=" + index + "]").attr('data_url');
+                        $(".ly_parkone .ly_pro_category .ly_categorybox .ly_cate_item").removeClass('on')
+                        $(".ly_parkone .ly_pro_category .ly_categorybox .ly_cate_item[data-item=" + index + "]").addClass('on');
+                        $('.ly_parkone .ly_shopallbtn a').attr('href', link);
+                    }
+                });
+            }
+        }
+    });
+
+    $("#bt_contact").click(function(e) {
+        $('#agent').val('Carrie');
+        var data = $("#contact").serialize();
+        var $first_name = $('#first_name').val();
+        var $last_name = $('#last_name').val();
+        var $phone = $('#phone').val();
+        var $email = $('#email').val();
+        var $company_name = $('#company_name').val();
+        var $message = $('#message').val();
+        if ($first_name == '') {
+            alert("First Name  Can not be empty")
+            return
+        } else if ($last_name == '') {
+            alert("Last Name  Can not be empty")
+            return
+        } else if ($phone == '') {
+            alert("Phone  Can not be empty")
+            return
+        } else if ($email == '') {
+            alert("Email  Can not be empty")
+            return
+        } else if ($company_name == '') {
+            alert("Company Name  Can not be empty")
+            return
+        } else if ($message == '') {
+            alert("Message  Can not be empty")
+            return
+        }
+        $.ajax({
+            url: BASE_URL + "/leave_words",
+            type: 'post',
+            dataType: 'json',
+            data: data,
+            success: function(data) {
+                if (data.code == 0) {
+                    $('.win_alert').show()
+                }
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

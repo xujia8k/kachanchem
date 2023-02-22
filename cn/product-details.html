@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-livestyle-extension="available">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="Search and buy over 380,000 chemical and reagent products on KACHANCHEM database. Check budget for custom synthesis to facilitate your research." name="description">
+    <meta content="chemical, order, shipment, CAS, quotation, prie, incoterm, supplier" name="keywords">
+    <title>KACHANCHEM</title>
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/themes.css" rel="stylesheet" type="text/css">
+    <link href="../css/user.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../js/themes.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/font.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="index lang_en w_1200" cz-shortcut-listen="true">
+    <script src="../js/fixed.toper.js"></script>
+    <script type="text/javascript">
+    $(window).resize(function() { $(window).webDisplay(0); });
+    $(window).webDisplay(0);
+    </script>
+    <div class="global_shopping_cart_bg"></div>
+    <div class="global_shopping_cart_box"></div>
+    <div class="global_bom_box_bg"></div>
+    <div class="global_bom_box"></div>
+    <div class="ueeshop_responsive_header">
+        <div class="header">
+            <h1 class="logo fl pic_box"><a href="../cn/index.html"><img src="../img/logo.png" alt="KACHANCHEM"><em></em></a></h1>
+            <div class="func">
+                <div class="btn search_btn"></div>
+                <div class="btn menu_btn"></div>
+            </div>
+        </div>
+        <div class="resp_search_box trans">
+            <div class="close_btn"><span></span></div>
+            <div class="clear"></div>
+            <div class="search_form" method="get">
+                <input type="text" class="search_text1" name="Keyword" placeholder="Search Our Catalog">
+                <input type="submit" class="sub_btn1" value="">
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="language trans">
+            <div class="close_btn"><span></span></div>
+            <div class="content">
+            </div>
+        </div>
+        <div class="nav trans">
+            <div class="list ">
+                <a href="../cn/index.html" class="title">首页</a>
+            </div>
+            <div class="list has_sec">
+                <a href="../cn/products.html" class="title">产品</a>
+            </div>
+            <div class="list ">
+                <a href="../cn/advantage-products.html" class="title">优势产品</a>
+            </div>
+            <div class="list ">
+                <a href="../cn/logistics-centre.html" class="title">物流中心</a>
+            </div>
+            <div class="list ">
+                <a href="../cn/about.html" class="title">关于我们</a>
+            </div>
+            <div class="list ">
+                <a href="../cn/contactus.html" class="title">联系我们</a>
+            </div>
+        </div>
+        <div class="son_nav trans"></div>
+        <div class="nav_bg"></div>
+    </div>
+    <div class="ueeshop_responsive_header header_blank"></div>
+    <script language="javascript">
+        $('.ueeshop_responsive_header .menu_btn').on('click',function(){
+        if($(this).hasClass('on')){
+            $(this).removeClass('on');
+            $('.ueeshop_responsive_header').find('.nav, .nav_bg, .son_nav').removeClass('on');
+            $('body').attr('style', '');
+        }else{
+            $(this).addClass('on');
+            $('.ueeshop_responsive_header').find('.nav, .nav_bg').addClass('on');
+            $('body').css({'overflow':'hidden'});
+        }
+        });
+        $('.ueeshop_responsive_header .language_btn').on('click',function(){
+            if($(this).hasClass('on')){
+                $(this).removeClass('on');
+                $('.ueeshop_responsive_header .language').removeClass('on');
+                $('body').attr('style','');
+            }else{
+                $(this).addClass('on');
+                $('.ueeshop_responsive_header .language').addClass('on');
+                $('.ueeshop_responsive_header').find('.menu_btn, .nav_bg, .nav, .son_nav').removeClass('on');
+                $('body').css({'overflow':'hidden'});
+            }
+        });
+        $('.ueeshop_responsive_header .search_btn').on('click',function(){
+            if($(this).hasClass('on')){
+                $(this).removeClass('on');
+                $('.ueeshop_responsive_header .resp_search_box').removeClass('on');
+            }else{
+                $(this).addClass('on');
+                $('.ueeshop_responsive_header .resp_search_box').addClass('on');
+                $('.ueeshop_responsive_header').find('.menu_btn, .nav_bg, .nav, .son_nav').removeClass('on');
+                $('body').attr('style', '');
+            }
+        });
+        $('.ueeshop_responsive_header .nav_bg').on('click',function(){
+            $(this).removeClass('on');
+            $('.ueeshop_responsive_header').find('.nav, .son_nav, .menu_btn').removeClass('on');
+            $('body').attr('style', '');
+        });
+        $('.ueeshop_responsive_header .resp_search_box .close_btn span').on('click',function(){
+            $(this).parents('.resp_search_box').removeClass('on');
+            $('.ueeshop_responsive_header .search_btn').removeClass('on');
+        });
+        $('.ueeshop_responsive_header .language .close_btn span').on('click',function(){
+            $(this).parents('.language').removeClass('on');
+            $('.ueeshop_responsive_header .language_btn').removeClass('on');
+        })
+        $('.ueeshop_responsive_header .nav .list .title').on('click', function (e){
+            $('.ueeshop_responsive_header .hasub .sub').removeClass('on');
+            $('.ueeshop_responsive_header .son_nav').html($(this).parents('.list').find('.sub').html()).addClass('on');
+        });
+        $('.ueeshop_responsive_header .son_nav').on('click','.cate_close', function (e){
+            $('.ueeshop_responsive_header .son_nav').removeClass('on');
+        })
+        $('.ueeshop_responsive_header .son_nav').on('click', '.son_nav_title',function(){
+            $(this).parent('.item').find('.third_nav').toggle('on');
+            $(this).toggleClass('on');
+        });
+    </script>
+    <div id="header">
+        <div class="header_in">
+            <h1 class="logo fl pic_box"><a href="../cn/index.html"><img src="../img/logo.png" alt="KACHANCHEM"><em></em></a></h1>
+            <div class="hedaer_nav">
+                <div class="default_nav_style">
+                    <div class="n_item">
+                        <a href="../cn/index.html">首页</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/products.html" title="products">产品</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/advantage-products.html" title="advantage-products">优势产品</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/logistics-centre.html" title="logistics-centre">物流中心</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/about.html" title="About Us">关于我们</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/contactus.html" title="Contact Us">联系我们</a>
+                    </div>
+                </div>
+                <script>
+                    $('.small_nav_sec').parent().css({'position':'relative','overflow':'visible'});
+                    $('.default_nav_style .n_item').hover(function(){
+                        $this=$(this);
+                        $this.find('.nav_sec').show().animate({'opacity':'1','margin-top':0},200);
+                        if(!$this.find('.nav_sec').hasClass('small_nav_sec')){
+                            $this.find('.nav_list>.clear').remove();
+                            $eq=parseInt(($this.find('.nav_sec_box').width()-$this.find('.nav_img').outerWidth(true))/$this.find('.nav_sec_item').outerWidth(true));
+                            $this.find('.nav_sec_item').each(function(index){
+                                if(index%$eq==($eq-1)){
+                                    $(this).after('<div class="clear"></div>');
+                                }
+                            });
+                        }
+                    },function(){
+                        $this=$(this);
+                        $this.find('.nav_sec').animate({'opacity':'0','margin-top':'30px'},0).hide();
+                    });
+                </script>
+            </div>
+            <div class="header_icon_list">
+                <div class="header_icon_item header_icon_search">
+                    <a href="javascript:void(0);"></a>
+                    <div class="header_search_form">
+                        <input type="text" class="text fl" placeholder="" name="name" notnull="" value="">
+                        <input type="submit" class="sub_btn fr" value="">
+                    </div>
+                </div>
+                <div class="header_icon_item header_icon_lang">
+                    <a href="../index.html"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product_details_banner">
+        <div class="txt">
+            <em>product details</em>
+        </div>
+    </div>
+    <div class="row-hd1">
+        <div class="m-ht4">
+            <div style="width:100%; clear:both; padding-top:34px;">
+                <div class="gg01">
+                    <p style="text-align: center">
+                        <img src="../img/test.png" id="productDetailsImg">
+                    </p>
+                </div>
+                <div class="gg02" id="productDetailsInfo">
+                    <div style="font-size: 24px; line-height:200%;font-weight: 400;" class="name">Name:Tretinoin</div>
+                    <div style="font-size: 16px; line-height:200%;">
+                        <span class="cas">CAS No.: 302-79-4</span><br>
+                        <span class="mf">MF: C20H28O2</span><br>
+                        <span class="mw">MW: 300.44</span><br>
+                        <span class="Purity">Purity: USP35</span> </div>
+                    <div style="font-size: 16px; line-height:200%; margin-top:24px;cursor: pointer;">
+                        <a class="p_each">Send Inquiry</a>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both;">&nbsp;</div>
+            <div class="cont wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <style>
+                </style>
+                <div class="lanrenzhijia">
+                    <div class="tab">
+                        <a href="javascript:;" class="">Product Specification</a>
+                        <a href="javascript:;" class="on">COA & MSDS & Test report</a>
+                    </div>
+                    <div class="content" id="specification">
+                        <ul>
+                            <li style="display: none;"></li>
+                            <li style="display: list-item;" class="product_url">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ueeshop_responsive_products_inquiry ueeshop_responsive_article_feedback" style="display: none">
+        <form name="inquiry" style="padding: 50px 0;float: none;width: 80%; margin: 0 auto;" id="checkout">
+            <div class="p_word" style="display: block;">
+                <div class="word_fix"></div>
+                <div class="word_con">
+                    <h1 class="clearfix">
+                        <span class="fl">询盘留言</span>
+                        <em class="fr J_close_btn" style="float: right;">
+                            <img src="../img/close_btn_white1.png" alt="">
+                        </em>
+                    </h1>
+                    <div class="rows input_rows">
+                        <label>Product </label>
+                        <span><input type="text" class="input" id="cas" name="cas"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <!-- <div class="rows input_rows input_rows_name" style="margin-left: 0">
+                            <label>Cas.NO</label>
+                            <span> <input type="text" class="input" id="cas" name="cas"></span>
+                            <div class="clear"></div>
+                        </div> -->
+                    <div class="rows input_rows input_rows_name">
+                        <label>Package </label>
+                        <span><input type="text" class="input" id="package" name="package"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="rows input_rows input_rows_name" style="margin-left: 3.3%;">
+                        <label>Purity </label>
+                        <span><input type="text" class="input" id="purity" name="purity"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="rows input_rows input_rows_name" style="margin-left: 0">
+                        <label>Name</label>
+                        <span> <input type="text" class="input" id="first_name" name="first_name"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="rows input_rows input_rows_name" style="margin-left: 3.3%;">
+                        <label>Company Name </label>
+                        <span><input type="text" class="input" id="company_name" name="company_name"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="rows input_rows input_rows_name">
+                        <label>Email Address</label>
+                        <span><input type="text" class="input" id="email" name="email"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="rows input_rows input_rows_name" style="margin-left: 3.3%;">
+                        <label>Phone</label>
+                        <span><input type="text" class="input" id="phone" name="phone" placeholder="Phone Number"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="rows input_rows">
+                        <label>Order Notes</label>
+                        <span><textarea name="note" id="note" cols="30" rows="5" class="input" placeholder="Write your notes here..."></textarea></span>
+                        <div class="clear"></div>
+                    </div>
+                    <input type="text" class="dn" id="good_id" name="good_id" style="display:none;">
+                    <div class="clear"></div>
+                    <div class="rows">
+                        <label></label>
+                        <span><input name="Submit" type="button" class="form_button" value="Submit" id="bt_checkout" style="margin: 0 auto;display: block; width: 260px;"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <input type="hidden" name="Site" value="en">
+                </div>
+            </div>
+        </form>
+    </div>
+
+        <div class="win_alert" style="display:none;">
+            <div class="win_close"><button class="close">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">X</font>
+                    </font>
+                </button></div>
+            <div class="win_top_tips">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Success</font>
+                </font>
+            </div>
+            <div class="win_tips">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Submitted Successfully!</font>
+                </font>
+            </div>
+            <div class="win_btns"><button class="btn btn_sure">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Confirm</font>
+                    </font>
+                </button></div>
+        </div>
+    <div id="footer">
+        <div class="footer_copy">
+            <span>© KACHANCHEM All Rights Reserved.</span>
+        </div>
+    </div>
+    <script>
+    $(function() {
+        var CAS='';
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+        $.ajax({
+            url: BASE_URL + "/product_detail",
+            type: 'get',
+            dataType: 'json',
+            data: {
+                product_id: getUrlParam('id')
+            },
+            success: function(data) {
+                let cas = "<span>CAS No.:</span> " + data.data.cas || '';
+                let mf = "<span>MF:</span> " + data.data.mf || '';
+                let mw = "<span>MW:</span> " + data.data.mw || '';
+                let Purity = "<span>Purity:</span> " + data.data.purity || '';
+                let product_url = '';
+                if (data.data.coa_url) {
+                    product_url += "<p><a href= '" + data.data.coa_url + "' download target='view_window'><i></i>" + data.data.cas + "-COA</a></p>";
+                }
+                if (data.data.msds_url) {
+                    product_url += "<p><a href='" + data.data.msds_url + "' download target='view_window'><i></i>" + data.data.cas + "-MSDS</a></p>";
+                }
+                if (data.data.test_report_url) {
+                    product_url += "<p><a href='" + data.data.test_report_url + "' download target='view_window'><i></i>" + data.data.cas + "-TEST_REPORT</a></p>";
+                }
+                CAS = data.data.cas;
+                $('#productDetailsImg').attr('src', data.data.img_url || '../img/no_pictures.png');
+                $('#productDetailsInfo .name').html(data.data.name)
+                $('#productDetailsInfo .cas').html(cas)
+                $('#productDetailsInfo .mf').html(mf)
+                $('#productDetailsInfo .mw').html(mw)
+                $('#productDetailsInfo .Purity').html(Purity)
+                $('#specification ul li:eq(0)').html(data.data.specification)
+                $('.product_url').html(product_url)
+            }
+        });
+
+        $("#bt_checkout").click(function(e) {
+            var data = $("#checkout").serialize();
+
+            var $email = $('#email').val();
+            var $phone = $('#phone').val();
+            if ($email == '') {
+                alert("Email Address Can not be empty")
+                return
+            } else if ($phone == '') {
+                alert("Phone Can not be empty")
+                return
+            } else {
+                $.ajax({
+                    url: BASE_URL + "/inquiries",
+                    type: 'post',
+                    dataType: 'json',
+                    data: data,
+                    error: function(xhr) {},
+                    success: function(data) {
+                        if (data.code == 0) {
+                            $('.ueeshop_responsive_products_inquiry').hide();
+                            $('.win_alert').show()
+                        }
+                    }
+                });
+            }
+
+        });
+        $(".J_close_btn").click(function(e) {
+            $('.ueeshop_responsive_products_inquiry').hide();
+        });
+        $(".p_each").click(function(e) {
+            $('#cas').val(CAS)
+            if(getUrlParam('id')){
+                $('#good_id').val(getUrlParam('id'))
+            }
+            $('.ueeshop_responsive_products_inquiry').show();
+        });
+        $(".lanrenzhijia .tab a").mouseover(function() {
+            $(this).addClass('on').siblings().removeClass('on');
+            var index = $(this).index();
+            number = index;
+            $('.lanrenzhijia .content li').hide();
+            $('.lanrenzhijia .content li:eq(' + index + ')').show();
+        });
+
+        var auto = 1; //等于1则自动切换，其他任意数字则不自动切换
+        if (auto == 1) {
+            var number = 0;
+            var maxNumber = $('.lanrenzhijia .tab a').length;
+
+            function autotab() {
+                number++;
+                number == maxNumber ? number = 0 : number;
+                $('.lanrenzhijia .tab a:eq(' + number + ')').addClass('on').siblings().removeClass('on');
+                $('.lanrenzhijia .content ul li:eq(' + number + ')').show().siblings().hide();
+            }
+
+            var tabChange = setInterval(autotab, 3000);
+            //鼠标悬停暂停切换
+            $('.lanrenzhijia').mouseover(function() {
+                clearInterval(tabChange);
+            });
+            $('.lanrenzhijia').mouseout(function() {
+                tabChange = setInterval(autotab, 3000);
+            });
+        }
+    });
+    </script>
+</body>
+
+</html>

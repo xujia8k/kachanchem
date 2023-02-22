@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-livestyle-extension="available">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="Search and buy over 380,000 chemical and reagent products on KACHANCHEM database. Check budget for custom synthesis to facilitate your research." name="description">
+    <meta content="chemical, order, shipment, CAS, quotation, prie, incoterm, supplier" name="keywords">
+    <title>KACHANCHEM</title>
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/themes.css" rel="stylesheet" type="text/css">
+    <link href="../css/user.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../js/themes.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/font.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="index lang_en w_1200" cz-shortcut-listen="true">
+    <script src="../js/fixed.toper.js"></script>
+    <script type="text/javascript">
+    $(window).resize(function() { $(window).webDisplay(0); });
+    $(window).webDisplay(0);
+    </script>
+    <div class="global_shopping_cart_bg"></div>
+    <div class="global_shopping_cart_box"></div>
+    <div class="global_bom_box_bg"></div>
+    <div class="global_bom_box"></div>
+    <div class="ueeshop_responsive_header">
+        <div class="header">
+            <h1 class="logo fl pic_box"><a href="../cn/index.html"><img src="../img/logo.png" alt="KACHANCHEM"><em></em></a></h1>
+            <div class="func">
+                <div class="btn search_btn"></div>
+                <div class="btn menu_btn"></div>
+            </div>
+        </div>
+        <div class="resp_search_box trans">
+            <div class="close_btn"><span></span></div>
+            <div class="clear"></div>
+            <div class="search_form" method="get">
+                <input type="text" class="search_text1" name="Keyword" placeholder="Search Our Catalog">
+                <input type="submit" class="sub_btn1" value="">
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="language trans">
+            <div class="close_btn"><span></span></div>
+            <div class="content">
+            </div>
+        </div>
+        <div class="nav trans">
+            <div class="list ">
+                <a href="../cn/index.html" class="title">首页</a>
+            </div>
+            <div class="list has_sec">
+                <a href="../cn/products.html" class="title">产品</a>
+            </div>
+            <div class="list ">
+                <a href="../cn/advantage-products.html" class="title">优势产品</a>
+            </div>
+            <div class="list ">
+                <a href="../cn/logistics-centre.html" class="title">物流中心</a>
+            </div>
+            <div class="list ">
+                <a href="../cn/about.html" class="title">关于我们</a>
+            </div>
+            <div class="list ">
+                <a href="../cn/contactus.html" class="title">联系我们</a>
+            </div>
+        </div>
+        <div class="son_nav trans"></div>
+        <div class="nav_bg"></div>
+    </div>
+    <div class="ueeshop_responsive_header header_blank"></div>
+    <script language="javascript">
+        $('.ueeshop_responsive_header .menu_btn').on('click',function(){
+        if($(this).hasClass('on')){
+            $(this).removeClass('on');
+            $('.ueeshop_responsive_header').find('.nav, .nav_bg, .son_nav').removeClass('on');
+            $('body').attr('style', '');
+        }else{
+            $(this).addClass('on');
+            $('.ueeshop_responsive_header').find('.nav, .nav_bg').addClass('on');
+            $('body').css({'overflow':'hidden'});
+        }
+        });
+        $('.ueeshop_responsive_header .language_btn').on('click',function(){
+            if($(this).hasClass('on')){
+                $(this).removeClass('on');
+                $('.ueeshop_responsive_header .language').removeClass('on');
+                $('body').attr('style','');
+            }else{
+                $(this).addClass('on');
+                $('.ueeshop_responsive_header .language').addClass('on');
+                $('.ueeshop_responsive_header').find('.menu_btn, .nav_bg, .nav, .son_nav').removeClass('on');
+                $('body').css({'overflow':'hidden'});
+            }
+        });
+        $('.ueeshop_responsive_header .search_btn').on('click',function(){
+            if($(this).hasClass('on')){
+                $(this).removeClass('on');
+                $('.ueeshop_responsive_header .resp_search_box').removeClass('on');
+            }else{
+                $(this).addClass('on');
+                $('.ueeshop_responsive_header .resp_search_box').addClass('on');
+                $('.ueeshop_responsive_header').find('.menu_btn, .nav_bg, .nav, .son_nav').removeClass('on');
+                $('body').attr('style', '');
+            }
+        });
+        $('.ueeshop_responsive_header .nav_bg').on('click',function(){
+            $(this).removeClass('on');
+            $('.ueeshop_responsive_header').find('.nav, .son_nav, .menu_btn').removeClass('on');
+            $('body').attr('style', '');
+        });
+        $('.ueeshop_responsive_header .resp_search_box .close_btn span').on('click',function(){
+            $(this).parents('.resp_search_box').removeClass('on');
+            $('.ueeshop_responsive_header .search_btn').removeClass('on');
+        });
+        $('.ueeshop_responsive_header .language .close_btn span').on('click',function(){
+            $(this).parents('.language').removeClass('on');
+            $('.ueeshop_responsive_header .language_btn').removeClass('on');
+        })
+        $('.ueeshop_responsive_header .nav .list .title').on('click', function (e){
+            $('.ueeshop_responsive_header .hasub .sub').removeClass('on');
+            $('.ueeshop_responsive_header .son_nav').html($(this).parents('.list').find('.sub').html()).addClass('on');
+        });
+        $('.ueeshop_responsive_header .son_nav').on('click','.cate_close', function (e){
+            $('.ueeshop_responsive_header .son_nav').removeClass('on');
+        })
+        $('.ueeshop_responsive_header .son_nav').on('click', '.son_nav_title',function(){
+            $(this).parent('.item').find('.third_nav').toggle('on');
+            $(this).toggleClass('on');
+        });
+    </script>
+    <div id="header">
+        <div class="header_in">
+            <h1 class="logo fl pic_box"><a href="../cn/index.html"><img src="../img/logo.png" alt="KACHANCHEM"><em></em></a></h1>
+            <div class="hedaer_nav">
+                <div class="default_nav_style">
+                    <div class="n_item">
+                        <a href="../cn/index.html">首页</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/products.html" title="products">产品</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/advantage-products.html" title="advantage-products">优势产品</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/logistics-centre.html" title="logistics-centre">物流中心</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/about.html" title="About Us">关于我们</a>
+                    </div>
+                    <div class="n_item">
+                        <a href="../cn/contactus.html" title="Contact Us">联系我们</a>
+                    </div>
+                </div>
+                <script>
+                    $('.small_nav_sec').parent().css({'position':'relative','overflow':'visible'});
+                    $('.default_nav_style .n_item').hover(function(){
+                        $this=$(this);
+                        $this.find('.nav_sec').show().animate({'opacity':'1','margin-top':0},200);
+                        if(!$this.find('.nav_sec').hasClass('small_nav_sec')){
+                            $this.find('.nav_list>.clear').remove();
+                            $eq=parseInt(($this.find('.nav_sec_box').width()-$this.find('.nav_img').outerWidth(true))/$this.find('.nav_sec_item').outerWidth(true));
+                            $this.find('.nav_sec_item').each(function(index){
+                                if(index%$eq==($eq-1)){
+                                    $(this).after('<div class="clear"></div>');
+                                }
+                            });
+                        }
+                    },function(){
+                        $this=$(this);
+                        $this.find('.nav_sec').animate({'opacity':'0','margin-top':'30px'},0).hide();
+                    });
+                </script>
+            </div>
+            <div class="header_icon_list">
+                <div class="header_icon_item header_icon_search">
+                    <a href="javascript:void(0);"></a>
+                    <div class="header_search_form">
+                        <input type="text" class="text fl" placeholder="" name="name" notnull="" value="">
+                        <input type="submit" class="sub_btn fr" value="">
+                    </div>
+                </div>
+                <div class="header_icon_item header_icon_lang">
+                    <a href="../index.html"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="article-content wrap-module g_clear">
+        <div class="about_banner"><img src="../img/contactus/banner.png" width="100%" alt=""></div>
+        <div class="about">
+            <div class="content">
+                <div class="company_profile">
+                    <h3 class="title">企业简介</h3>
+                    <p class="company_profile J_company_profile"> Kachan Tech (Shanghai) Co., ltd. based in Shanghai, has been doing business in China mainland since 2011, and the founder Garry has more than 15 years' experiences of fine chemical customization and sourcing service. We have a cooperating lab in Hyderabad, India, and will have another lab with a Canadian chemical doctor in Mumbai,India. In China, we have labs supporting with doctors. We have dedicated 7 staffs to developing overseas marketing since 2019 to do more overseas trading business, and now more than 10 staffs in our Overseas Dept. We have six different testing centers around China to test the Spectrum analysis before the shipment according to customers' needs, such as C-NMR, H-NMR, HPLC, GC, GC-MS and LC-MS. Meanwhile, for logistics, we gain all varieties of shipping forwarders to speed up the shipment for customers among China, including FedEx, DHL, air and sea shipping to ensure the goods reached to our customers worldwide at the first time. Our website www.Kachanchem.com is still built for overseas customers. and we will add more info then Any enquries,
+                        In addition to professional procurement and sales teams and customized laboratories, kachan Chemical also has its own professional logistics team, which can reduce customers' international logistics costs and help different customers solve customs clearance problems.</p>
+                    <br>
+                </div>
+                <div class="company_picture">
+                    <img src="../img/contactus/1.png" alt="" class="img1">
+                    <img src="../img/contactus/2.png" alt="" class="img2">
+                    <img src="../img/contactus/3.png" alt="" class="img3">
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="ueeshop_responsive_article_feedback ">
+                <div class="article_feedback_title">
+                    <div class="title">留言</div>
+                    <span></span>
+                    <div class="txt">如果您对我们有任何建议或问题，请联系我们.</div>
+                </div>
+                <form method="post" name="feedback" id="contact">
+                    <div class="rows input_rows">
+                        <input type="text" class="input" id="first_name" name="first_name" placeholder="Please Enter First Name" size="30" maxlength="100">
+                        <font class="fc_red">*</font>
+                    </div>
+                    <div class="rows input_rows">
+                        <input type="text" class="input" id="last_name" name="last_name" placeholder="Please Enter Last Name">
+                        <font class="fc_red">*</font>
+                    </div>
+                    <div class="rows input_rows">
+                        <input type="text" class="input" id="phone" name="phone" placeholder="Please Enter Phone Number">
+                        <font class="fc_red">*</font>
+                    </div>
+                    <div class="rows input_rows">
+                        <input type="text" class="input" id="email" name="email" placeholder="Please Enter Email">
+                        <font class="fc_red">*</font>
+                    </div>
+                    <div class="rows input_rows" style="width: 100%;">
+                        <input type="text" class="input" id="company_name" name="company_name" placeholder="Please Enter Compny">
+                    </div>
+                    <div class="rows textarea_rows">
+                        <textarea name="message" id="message" class="form_area contents" placeholder="如果您对我们有任何建议或问题，请联系我们." notnull=""></textarea>
+                    </div>
+                    <input type="text" class="dn" id="agent" name="agent" style="display:none;">
+                    <div class="clear"></div>
+                    <div class="rows"><input name="Submit" type="button" class="form_button" value="Submit" id="bt_contact"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer_copy">
+            <span>© KACHANCHEM All Rights Reserved.</span>
+        </div>
+    </div>
+        <div class="win_alert" style="display:none;">
+            <div class="win_close"><button class="close">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">X</font>
+                    </font>
+                </button></div>
+            <div class="win_top_tips">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Success</font>
+                </font>
+            </div>
+            <div class="win_tips">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Submitted Successfully!</font>
+                </font>
+            </div>
+            <div class="win_btns"><button class="btn btn_sure">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Confirm</font>
+                    </font>
+                </button></div>
+        </div>
+    <script>
+
+        $.ajax({
+            url: BASE_URL + "/introductions",
+            type: 'get',
+            dataType: 'json',
+            success: function(data) {
+                if (data.code == 0) {
+                    $(".J_company_profile").html(data.data.introductions);
+                }
+            }
+        });
+    $("#bt_contact").click(function(e) {
+        $('#agent').val('Carrie');
+        var data = $("#contact").serialize();
+        $.ajax({
+            url: BASE_URL + "/leave_words",
+            type: 'post',
+            dataType: 'json',
+            data: data,
+            error: function(xhr) {
+                // console.log("xhr---",xhr)
+            },
+            success: function(data) {
+                if (data.code == 0) {
+                    $('.win_alert').show()
+                }
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

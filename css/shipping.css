@@ -1,0 +1,400 @@
+.logistics-content {
+    background-color: #fff
+}
+
+.logistics-content .wrap {
+    width: 1400px;
+}
+
+.logistics-content .banner {
+    position: relative;
+    background: center center no-repeat;
+    background-size: cover;
+    padding-top: 20%;
+    background: url('../img/logistics/banner.png');
+}
+
+.logistics-content .banner .txt {
+    position: absolute;
+    top: 49%;
+    transform: translateY(-50%);
+    left: 220px;
+    color: #fff
+}
+
+.logistics-content .banner .txt em {
+    letter-spacing: 3px;
+    display: block;
+    font-size: 44px;
+    line-height: 44px;
+    padding-bottom: 29px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Oswald-Light";
+    text-transform: uppercase;
+}
+
+.logistics-content .banner .txt em:after {
+    content: "";
+    width: 64px;
+    height: 6px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.logistics_search {
+    position: relative;
+    top: -75px;
+    width: 1400px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    z-index: 3333;
+}
+
+.logistics_search .input-group {
+    overflow: hidden;
+    width: 100%;
+    padding: 22px 38px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.logistics_search .input-group .input {
+    display: block;
+    float: left;
+    width: 1096px;
+    height: 106px;
+    background-color: rgb(248, 248, 248);
+    border: 0;
+    line-height: 106px;
+    text-indent: 22px;
+    font-size: 24px;
+    color: #272727;
+}
+
+.logistics_search .input-group .btn {
+    display: block;
+    float: left;
+    width: 248px;
+    height: 106px;
+    line-height: 106px;
+    border-radius: 5px;
+    font-size: 30px;
+    color: #fff;
+    background-color: rgb(3, 89, 176);
+}
+
+.logistics_search .input-group .btn .icon_search {
+    position: relative;
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    background: url(../img/search_btn_white.png) no-repeat center center;
+    background-size: 28px;
+    vertical-align: middle;
+    margin-right: 33px;
+}
+
+.mask {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    z-index: 3;
+}
+
+.logistics_details {
+    display: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    width: 1400px;
+    margin-top: 20px;
+}
+
+.logistics_details_head {
+    height: 80px;
+    padding-left: 125px;
+    line-height: 80px;
+    border-bottom: 1px solid #d8d8d8;
+    font-size: 24px;
+    color: #272727;
+}
+
+.logistics_details_head .name {
+    margin-right: 70px;
+}
+
+.logistics_details_head .icon {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url(../img/phone2.png) no-repeat center center;
+    background-size: 30px;
+    vertical-align: middle;
+    margin-right: 17px;
+    margin-top: -3px;
+}
+
+.picture_list {
+    overflow: hidden;
+}
+
+.one_left {
+    float: left;
+    width: 475px;
+    margin-bottom: 12px;
+}
+
+.one_right {
+    float: right;
+    width: 904px;
+    margin-bottom: 20px;
+}
+
+.one_right_2 {
+    width: 904px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/*.one_right_2 .img{
+  width: 439px;
+}
+*/
+.result-body {
+    overflow: hidden;
+    padding: 40px 125px;
+}
+
+.result-body .scene {
+    float: right;
+    width: 250px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.result-body .title {
+    line-height: 38px;
+    font-size: 20px;
+}
+
+.result-body .sort {
+    display: inline-block;
+    width: 96px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.result-body .title .text {
+    display: inline-block;
+    margin-left: 164px;
+}
+
+.result-body .content {
+    margin-top: 40px;
+}
+
+.result-body .step {
+    position: relative;
+    padding-bottom: 35px;
+    font-size: 16px;
+    color: #666;
+    list-style: none;
+}
+
+.result-body .datetime {
+    display: inline-block;
+    vertical-align: top;
+    width: 80px;
+    font-size: 14px;
+}
+
+.result-body .step-icon {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 83px;
+    width: 22px;
+    height: 22px;
+    background: url(https://cdn.kuaidi100.com/images/www/sp-index.png) -285px -131px no-repeat #FFF;
+}
+
+.up .result-body .step-icon {
+    background-position-y: -163px;
+}
+
+.result-body .step.start {
+    color: #0082FA;
+}
+
+.result-body .step.ing {
+    color: #FF9631;
+}
+
+.result-body .step.start .step-icon {
+    background-position: -239px -41px;
+    /* margin-top: -4px; */
+}
+
+.result-body .step.ing .step-icon {
+    background-position: -281px -5px;
+    /* margin-top: -4px; */
+}
+
+.result-body .step .text {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 590px;
+}
+
+.result-body .step:after {
+    position: absolute;
+    top: 22px;
+    bottom: 2px;
+    left: 173px;
+    width: 1px;
+    background: #e8e8e8;
+    content: '';
+}
+
+.result-body .step.end:after {
+    display: none;
+}
+
+.result-footer {
+    padding: 24px;
+    margin: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.result-footer .result-btn {
+    width: 266px;
+    margin: 24px auto;
+    background: #ffffff;
+    border: 1px solid #ff9631;
+    border-radius: 24px;
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.2);
+    line-height: 48px;
+    color: #FF9631;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .logistics_search .input-group {
+        overflow: hidden;
+        width: 100%;
+        padding: 0px;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    .logistics_search {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        margin: 20px 0;
+    }
+
+    .logistics_search .input-group .input {
+        display: block;
+        float: left;
+        width: 80%;
+        height: 60px;
+        background-color: rgb(248, 248, 248);
+        border: 0;
+        line-height: 60px;
+        text-indent: 22px;
+        font-size: 16px;
+        color: #272727;
+    }
+
+    .logistics_search .input-group .btn {
+        display: block;
+        float: left;
+        width: 20%;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #fff;
+        background-color: rgb(3, 89, 176);
+    }
+
+    .logistics_search .input-group .btn .icon_search {
+        display: none;
+    }
+
+    .logistics_details {
+        width: 100%;
+    }
+
+    .logistics_details_head {
+        height: 40px;
+        padding-left: 25px;
+        line-height: 40px;
+        border-bottom: 1px solid #d8d8d8;
+        font-size: 14px;
+        color: #272727;
+    }
+
+    .logistics_details_head .icon {
+        position: relative;
+        display: inline-block;
+        width: 24px;
+        height: 28px;
+        background: url(../img/phone2.png) no-repeat center center;
+        background-size: 20px;
+        vertical-align: middle;
+        margin-right: 17px;
+        margin-top: -3px;
+    }
+
+    .result-body {
+        overflow: hidden;
+        padding: 20px 20px;
+    }
+
+    .result-body .title {
+        line-height: 20px;
+        font-size: 18px;
+    }
+
+    .result-body .title .text {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    .result-body .step-icon {
+        margin: 0 0px;
+    }
+
+    .result-body .step .text {
+        width: 240px;
+    }
+
+    .result-body .step:after {
+        position: absolute;
+        top: 22px;
+        bottom: 2px;
+        left: 95px;
+        width: 1px;
+        background: #e8e8e8;
+        content: '';
+    }
+
+}
