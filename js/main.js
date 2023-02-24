@@ -1,4 +1,4 @@
-const BASE_URL = "https://421jz69268.zicp.fun/api/web/v1/commons";
+const BASE_URL = "http://47.97.171.123:3000/api/web/v1/commons";
 
 $(function(){
     nav('.hedaer_nav','.hedaer_nav .n_item');
