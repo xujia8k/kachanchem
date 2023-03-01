@@ -10,6 +10,7 @@
     <meta content="Search and buy over 380,000 chemical and reagent products on KACHANCHEM database. Check budget for custom synthesis to facilitate your research." name="description">
     <meta content="chemical, order, shipment, CAS, quotation, prie, incoterm, supplier" name="keywords">
     <title>KACHANCHEM</title>
+    <link rel="KACHANCHEM ICON" href="./img/favicon.ico" type="image/x-icon">
     <link href="./css/iconfont.css" rel="stylesheet" type="text/css">
     <link href="./css/global.css" rel="stylesheet" type="text/css">
     <link href="./css/themes.css" rel="stylesheet" type="text/css">
@@ -203,6 +204,7 @@
             <div class="bx-wrapper index_banner" style="max-width: 1920px;">
                 <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative;">
                     <div class="bxslider_1" style="width: 415%; position: relative; transition-duration: 0s; transform: translate3d(-1930px, 0px, 0px);">
+                        <div class="search search_box"><input type="text" placeholder="Please input Product name or CAS No." class="prompt search_text2" autocomplete="off"> <i class="icon-search-big sub_btn2"></i><div class="results"></div></div>
                     </div>
                 </div>
             </div>
@@ -291,7 +293,7 @@
             <span>© KACHANCHEM All Rights Reserved.</span>
         </div>
     </div>
-    <input type="text" placeholder="Please input Product name or CAS No." class="prompt" onkeydown="javascript:if(event.keyCode==13) search_input(" .search_box="" input="" ');'="" autocomplete="off">
+    <!-- <input type="text" placeholder="Please input Product name or CAS No." class="prompt" onkeydown="javascript:if(event.keyCode==13) search_input(" .search_box="" input="" ');'="" autocomplete="off"> -->
     <script>
     //获取banner
     $.ajax({
@@ -306,7 +308,7 @@
                     tem += "<div class='bx-clone'><img src='"+ data[i].img_url +"' alt='2' width='100%'><div class='container'><div style='font-size: 70px;color: #fff; padding-bottom: 30px;'><p style='font-weight: bold;padding-top: 180px;'>" + data[i].title + "</p><p style=' margin-top: 10px;'>" + data[i].subtitle + "</p></div><div class='search search_box'><input type='text' placeholder='Please input Product name or CAS No.' class='prompt search_text2'  autocomplete='off' /> <i class='icon-search-big sub_btn2'></i><div class='results'></div></div></div></div>" 
                 }
                 $('.bxslider_1').html(tem)
-                $('.bxslider_1').bxSlider({ slideWidth: 1920, adaptiveHeight: true, mode: 'horizontal', pause: 4000, autoHover: true });
+                $('.bxslider_1').bxSlider({ slideWidth: 1920, adaptiveHeight: true, mode: 'horizontal', pause: 5000, autoHover: true });
             }
         }
     });

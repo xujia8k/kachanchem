@@ -61,35 +61,44 @@ $(function(){
         $('.win_alert').hide();
     });
     
-    //头部搜索
     $(document).keydown(function(event) {
         let searchValue = $(".header_search_form  .text").val();
+        let search_text2 = $(".search_text2").val();
+      
         if (event.keyCode == 13 && searchValue) {
+            $(".header_search_form  .text").val('');
             window.location = 'products.html?q=' + searchValue;
+        }else if (event.keyCode == 13 && search_text2) {
+             debugger
+            window.location = 'products.html?q=' + search_text2;
         }
     });
 
     $('.header_search_form  .sub_btn').click(function() {
         let searchValue = $(".header_search_form  .text").val();
         if (searchValue) {
+            $(".header_search_form  .text").val('');
             window.location = 'products.html?q=' + searchValue;
         }
     });
     $('body').on('click', '.sub_btn1', function(){
         let searchValue = $(".search_text1").val();
         if (searchValue) {
+            $(".search_text1").val('');
             window.location = 'products.html?q=' + searchValue;
         }
     });
     $('body').on('click', '.search_box input', function(){
         let searchValue = $(".search_text1").val();
         if (searchValue) {
+            $(".search_text1").val('');
             window.location = 'products.html?q=' + searchValue;
         }
     });
     $('body').on('click', '.sub_btn2', function(){
-        let searchValue = $(".search_text2").val();
+        let searchValue = $(this).parent().find('input').val();
         if (searchValue) {
+            $(this).parent().find('input').val('');
             window.location = 'products.html?q=' + searchValue;
         }
     });
