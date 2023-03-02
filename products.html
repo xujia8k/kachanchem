@@ -302,7 +302,7 @@
                 if (data.code == 0) {
                     for (var i = 0; i < data.data.page_datas.length; i++) {
                         var datas = data.data.page_datas[i];
-                        html += "<div class='box fl'><div class='imgbox pic_box'><a href='./product-details.html?id=" + datas.id + "'><img src=" + datas.img_url + "></a></div><div class='name'><a href='./product-details.html?id=" + datas.id + "'>" + datas.name + "</a></div><div class='cas'><a href='./product-details.html?id=" + datas.id + "'>" + datas.cas + "</a></div></div>"
+                        html += "<div class='box fl'><div class='imgbox pic_box'><a href='./product-details.html?id=" + datas.id + "'><img src=" + datas.product_img_url + "></a></div><div class='name'><a href='./product-details.html?id=" + datas.id + "'>" + datas.name + "</a></div><div class='cas'><a href='./product-details.html?id=" + datas.id + "'>" + datas.cas + "</a></div></div>"
                     }
                     $("#goods_list").html(html);
                     $(".cate_title").html(getUrlParam('category') || getUrlParam('name'));

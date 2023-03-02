@@ -252,7 +252,7 @@
                 if (data.code == 0) {
                     for (var i = 0; i < data.data.page_datas.length; i++) {
                         var datas = data.data.page_datas[i];
-                        html += "<li class='wow fadeInUp'><a href='./product-details.html?id=" + datas.id + "'><div class='pic'><img src=" + datas.img_url + " alt=" + datas.name + "></div><div class='goodInfo'><p class='name'>" + datas.name + "</p><p class='cas'>Cas.NO:" + datas.cas + "</p></div></a></li>"
+                        html += "<li class='wow fadeInUp'><a href='./product-details.html?id=" + datas.id + "'><div class='pic'><img src=" + datas.product_img_url + " alt=" + datas.name + "></div><div class='goodInfo'><p class='name'>" + datas.name + "</p><p class='cas'>Cas.NO:" + datas.cas + "</p></div></a></li>"
                     }
                     $("#advantage_products").html(html);
 
