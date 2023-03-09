@@ -214,7 +214,7 @@
         <div class="title">Product classification</div>
         <div class="classification_list"></div>
     </div>
-    <div style="width: 1400px;margin: 50px auto 170px;color: #0359b0;font-size: 50px;font-family: 'Robotoslab-Bold'; text-align: center; text-transform: uppercase;">We should put our limited resources on few <br />superior products</div>
+    <div style="max-width: 1400px;width: 92%;margin: 50px auto 170px;color: #0359b0;font-size: 50px;font-family: 'Robotoslab-Bold'; text-align: center; text-transform: uppercase;">We should put our limited resources on few <br />superior products</div>
     <div class="visual_plugins_container ad_products" data-type="poster" data-mode="mode_152" data-location="3">
         <div class="ly_parkone ly_poster_152" data-visual-id="276">
             <div class="ly_parkone_title themes_box_title">Advantage products</div>
@@ -305,10 +305,10 @@
                 var data = data.data.page_datas;
                 var tem = '';
                 for (var i = 0; i < data.length; i++) {
-                    tem += "<div class='bx-clone'><img src='"+ data[i].img_url +"' alt='2' width='100%'><div class='container'><div style='font-size: 70px;color: #fff; padding-bottom: 30px;'><p style='font-weight: bold;padding-top: 180px;'>" + data[i].title + "</p><p style=' margin-top: 10px;'>" + data[i].subtitle + "</p></div><div class='search search_box'><input type='text' placeholder='Please input Product name or CAS No.' class='prompt search_text2'  autocomplete='off' /> <i class='icon-search-big sub_btn2'></i><div class='results'></div></div></div></div>" 
+                    tem += "<div class='bx-clone'><img src='"+ data[i].img_url +"' alt='2' width='100%'><div class='banner_content'><div class='title'><p>" + data[i].title + "</p><p class='brief'>" + data[i].subtitle + "</p></div><div class='search search_box'><input type='text' placeholder='Please input Product name or CAS No.' class='prompt search_text2'  autocomplete='off' /> <i class='icon-search-big sub_btn2'></i><div class='results'></div></div></div></div>" 
                 }
                 $('.bxslider_1').html(tem)
-                $('.bxslider_1').bxSlider({ slideWidth: 1920, adaptiveHeight: true, mode: 'horizontal', pause: 5000, autoHover: true });
+                $('.bxslider_1').bxSlider({ slideWidth: 1920, adaptiveHeight: true, mode: 'horizontal', pause: 50000, autoHover: true });
             }
         }
     });
