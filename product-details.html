@@ -211,7 +211,7 @@
                     </p>
                 </div>
                 <div class="gg02" id="productDetailsInfo">
-                    <div style="font-size: 24px; line-height:200%;font-weight: 400;" class="name">Name:Tretinoin</div>
+                    <div style="font-size: 24px; line-height:200%;font-weight: 400;" class="name">Name:<span></span></div>
                     <div style="font-size: 16px; line-height:200%;">
                         <span class="cas">CAS No.: 302-79-4</span><br>
                         <span class="mf">MF: C20H28O2</span><br>
@@ -371,7 +371,7 @@
                 }
                 CAS = data.data.cas;
                 $('#productDetailsImg').attr('src', data.data.img_url || './img/no_pictures.png');
-                $('#productDetailsInfo .name').html(data.data.name)
+                $('#productDetailsInfo .name span').html(data.data.name)
                 $('#productDetailsInfo .cas').html(cas)
                 $('#productDetailsInfo .mf').html(mf)
                 $('#productDetailsInfo .mw').html(mw)
