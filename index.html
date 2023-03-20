@@ -214,57 +214,75 @@
         <div class="title">Product classification</div>
         <div class="classification_list"></div>
     </div>
-    <div style="max-width: 1400px;width: 92%;margin: 50px auto 170px;color: #0359b0;font-size: 50px;font-family: 'Robotoslab-Bold'; text-align: center; text-transform: uppercase;">We should put our limited resources on few <br />superior products</div>
-    <div class="visual_plugins_container ad_products" data-type="poster" data-mode="mode_152" data-location="3">
-        <div class="ly_parkone ly_poster_152" data-visual-id="276">
-            <div class="ly_parkone_title themes_box_title">Advantage products</div>
-            <div class="ly_pro_category">
-                <div class="ly_categorybox t143_slide"></div>
-                <div class="ly_shopallbtn">
-                    <a class="" data-link="null" href="">View details</a>
+        <div class="advantage_products_title">Product classification</div>
+    <div class="advantage_products">
+            <div style="width: 100%; overflow: hidden; position: relative;padding: 124px 0;">
+                <div class="bxslider_2">
+                    
                 </div>
             </div>
-            <div class="ly_switchbtn">
-                <a href="javascript:;" class="ly_btn prev ly_leftbtn"></a>
-                <a href="javascript:;" class="ly_btn next ly_rightbtn"></a>
-            </div>
-        </div>
     </div>
     <div class="wrap">
-        <div class="ueeshop_responsive_article_feedback ">
-            <div class="article_feedback_title">
-                <div class="title">Message</div>
-                <span></span>
-                <div class="txt">If you have any suggestions or question for us.Please contact us.</div>
-            </div>
-            <form method="post" name="feedback" id="contact">
-                <div class="rows input_rows">
-                    <input type="text" class="input" id="first_name" name="first_name" placeholder="Please Enter First Name" size="30" maxlength="100">
-                    <font class="fc_red">*</font>
-                </div>
-                <div class="rows input_rows">
-                    <input type="text" class="input" id="last_name" name="last_name" placeholder="Please Enter Last Name">
-                    <font class="fc_red">*</font>
-                </div>
-                <div class="rows input_rows">
-                    <input type="text" class="input" id="phone" name="phone" placeholder="Please Enter Phone Number">
-                    <font class="fc_red">*</font>
-                </div>
-                <div class="rows input_rows">
-                    <input type="text" class="input" id="email" name="email" placeholder="Please Enter Email">
-                    <font class="fc_red">*</font>
-                </div>
-                <div class="rows input_rows" style="width: 100%;">
-                    <input type="text" class="input" id="company_name" name="company_name" placeholder="Please Enter Compny">
-                </div>
-                <div class="rows textarea_rows">
-                    <textarea name="message" id="message" class="form_area contents" placeholder="If you have any suggestions or question for us.Please contact us." notnull=""></textarea>
-                </div>
-                <input type="text" class="dn" id="agent" name="agent" style="display:none;">
-                <div class="clear"></div>
-                <div class="rows"><input name="Submit" type="button" class="form_button" value="Submit" id="bt_contact"></div>
-            </form>
-        </div>
+        <div class="barnd_title">Our customers</div>
+          <div class="barnd_list">
+              <div class="item">
+                  <img src="./img/brand/1.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/2.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/3.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/4.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/5.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/6.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/7.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/8.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/9.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/10.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/11.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/12.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/13.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/14.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/15.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/16.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/17.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/18.png" alt="">
+              </div>
+              <div class="item">
+                  <img src="./img/brand/19.png" alt="">
+              </div>
+          </div>
     </div>
     <div class="win_alert" style="display:none;">
         <div class="win_close"><button class="close">
@@ -305,10 +323,11 @@
                 var data = data.data.page_datas;
                 var tem = '';
                 for (var i = 0; i < data.length; i++) {
-                    tem += "<div class='bx-clone'><img src='"+ data[i].img_url +"' alt='2' width='100%'><div class='banner_content'><div class='title'><p>" + data[i].title + "</p><p class='brief'>" + data[i].subtitle + "</p></div><div class='search search_box'><input type='text' placeholder='Please input Product name or CAS No.' class='prompt search_text2'  autocomplete='off' /> <i class='icon-search-big sub_btn2'></i><div class='results'></div></div></div></div>" 
+                    tem += "<div class='bx-clone'><img src='"+ data[i].img_url +"' alt='2' width='100%'><div class='banner_content'><div class='title'></div><div class='search search_box'><input type='text' placeholder='Please input Product name or CAS No.' class='prompt search_text2'  autocomplete='off' /> <i class='icon-search-big sub_btn2'></i><div class='results'></div></div></div></div>"  
+                    // tem += "<div class='bx-clone'><img src='"+ data[i].img_url +"' alt='2' width='100%'><div class='banner_content'><div class='title'><p>" + data[i].title + "</p><p class='brief'>" + data[i].subtitle + "</p></div><div class='search search_box'><input type='text' placeholder='Please input Product name or CAS No.' class='prompt search_text2'  autocomplete='off' /> <i class='icon-search-big sub_btn2'></i><div class='results'></div></div></div></div>" 
                 }
                 $('.bxslider_1').html(tem)
-                $('.bxslider_1').bxSlider({ slideWidth: 1920, adaptiveHeight: true, mode: 'horizontal', pause: 50000, autoHover: true });
+                $('.bxslider_1').bxSlider({ slideWidth: 1920, adaptiveHeight: true, mode: 'horizontal', pause: 5000, autoHover: true });
             }
         }
     });
@@ -346,10 +365,9 @@
             if (data.code == 0) {
                 var data = data.data.page_datas;
                 var strVar = '';
+                var tag = 1;
                 for (var i = 0; i < data.length; i++) {
-                    strVar += "<div class=\"ly_cate_item fl on Poster-1\" data_url=\"./product-details.html?id=" + data[i].id + "\">\n";
-                    strVar += "                        <a href=\"./product-details.html?id=" + data[i].id + "\">\n";
-                    strVar += "                            <div class=\"item\">\n";
+                        strVar += "                        <a class=\"item\" href=\"./product-details.html?id=" + data[i].id + "\">\n";
                     strVar += "                                <div class=\"ovh\">\n";
                     strVar += "                                    <img src=\"" + data[i].product_img_url + "\" class=\"img\">\n";
                     strVar += "                                    <div class=\"desc\">\n";
@@ -357,72 +375,66 @@
                     strVar += "                                        <p class=\"cas\">CAS:" + data[i].cas + "<\/p>\n";
                     strVar += "                                    <\/div>\n";
                     strVar += "                                <\/div>\n";
-                    strVar += "                            <\/div>\n";
+                    strVar += "<div class='btn'>View details<\/div>";
                     strVar += "                        <\/a>\n";
-                    strVar += "                    <\/div>\n";
                 }
-                $('.ly_categorybox').html(strVar)
-                $(".ly_poster_152[data-visual-id='276'] .ly_categorybox").visualSrcoll({
-                    "speed": "500",
-                    "count": 1,
-                    "model": "cycle",
-                    "auto": "1",
-                    "time": 5000,
-                    "slideFun": function() {
-                        let index = parseInt(this.index);
-                        let link = $(".ly_parkone .ly_pro_category .ly_categorybox .ly_cate_item[data-item=" + index + "]").attr('data_url');
-                        $(".ly_parkone .ly_pro_category .ly_categorybox .ly_cate_item").removeClass('on')
-                        $(".ly_parkone .ly_pro_category .ly_categorybox .ly_cate_item[data-item=" + index + "]").addClass('on');
-                        $('.ly_parkone .ly_shopallbtn a').attr('href', link);
-                    }
+                $('.bxslider_2').html(strVar)
+                $('.bxslider_2').bxSlider({ 
+                    slideWidth: 1200,
+                    moveSlides:3, 
+                    adaptiveHeight: true, 
+                    mode: 'horizontal', 
+                    pause: 5000, 
+                    controls: true, 
+                    autoHover: true 
                 });
             }
         }
     });
 
-    $("#bt_contact").click(function(e) {
-        $('#agent').val('Carrie');
-        var data = $("#contact").serialize();
-        var $first_name = $('#first_name').val();
-        var $last_name = $('#last_name').val();
-        var $phone = $('#phone').val();
-        var $email = $('#email').val();
-        var $company_name = $('#company_name').val();
-        var $message = $('#message').val();
-        if ($first_name == '') {
-            alert("First Name  Can not be empty")
-            return
-        } else if ($last_name == '') {
-            alert("Last Name  Can not be empty")
-            return
-        } else if ($phone == '') {
-            alert("Phone  Can not be empty")
-            return
-        } else if ($email == '') {
-            alert("Email  Can not be empty")
-            return
-        } else if ($company_name == '') {
-            alert("Company Name  Can not be empty")
-            return
-        } else if ($message == '') {
-            alert("Message  Can not be empty")
-            return
-        }
-        $.ajax({
-            url: BASE_URL + "/leave_words",
-            type: 'post',
-            dataType: 'json',
-            data: data,
-            error: function(xhr) {
-                // console.log("xhr---",xhr)
-            },
-            success: function(data) {
-                if (data.code == 0) {
-                    $('.win_alert').show()
-                }
-            }
-        });
-    });
+    // $("#bt_contact").click(function(e) {
+    //     $('#agent').val('Carrie');
+    //     var data = $("#contact").serialize();
+    //     var $first_name = $('#first_name').val();
+    //     var $last_name = $('#last_name').val();
+    //     var $phone = $('#phone').val();
+    //     var $email = $('#email').val();
+    //     var $company_name = $('#company_name').val();
+    //     var $message = $('#message').val();
+    //     if ($first_name == '') {
+    //         alert("First Name  Can not be empty")
+    //         return
+    //     } else if ($last_name == '') {
+    //         alert("Last Name  Can not be empty")
+    //         return
+    //     } else if ($phone == '') {
+    //         alert("Phone  Can not be empty")
+    //         return
+    //     } else if ($email == '') {
+    //         alert("Email  Can not be empty")
+    //         return
+    //     } else if ($company_name == '') {
+    //         alert("Company Name  Can not be empty")
+    //         return
+    //     } else if ($message == '') {
+    //         alert("Message  Can not be empty")
+    //         return
+    //     }
+    //     $.ajax({
+    //         url: BASE_URL + "/leave_words",
+    //         type: 'post',
+    //         dataType: 'json',
+    //         data: data,
+    //         error: function(xhr) {
+    //             // console.log("xhr---",xhr)
+    //         },
+    //         success: function(data) {
+    //             if (data.code == 0) {
+    //                 $('.win_alert').show()
+    //             }
+    //         }
+    //     });
+    // });
     </script>
 </body>
 

@@ -3,7 +3,7 @@
 }
 
 .logistics-content .wrap {
-    width: 1400px;
+    width: 1200px;
 }
 
 .logistics-content .banner {
@@ -16,22 +16,22 @@
 
 .logistics-content .banner .txt {
     position: absolute;
-    top: 49%;
+    top: 40%;
     transform: translateY(-50%);
     left: 220px;
     color: #fff
 }
 
 .logistics-content .banner .txt em {
-    letter-spacing: 3px;
-    display: block;
-    font-size: 44px;
-    line-height: 44px;
-    padding-bottom: 29px;
     font-weight: 700;
     font-style: normal;
-    font-family: "Oswald-Light";
     text-transform: uppercase;
+    letter-spacing: 3px;
+    display: block;
+    font-size: 30px;
+    line-height: 28px;
+    padding-bottom: 40px;
+    position: relative;
 }
 
 .logistics-content .banner .txt em:after {
@@ -47,17 +47,20 @@
 .logistics_search {
     position: relative;
     top: -75px;
-    width: 1400px;
-    height: 150px;
+    width: 100%;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
     z-index: 3333;
 }
+.logistics_search #logistics{
+    background-color: rgb(248, 248, 248);
+    overflow: hidden;
+}
 
 .logistics_search .input-group {
     overflow: hidden;
-    width: 100%;
+    /*width: 100%;*/
     padding: 22px 38px;
     border-collapse: separate;
     border-spacing: 0;
@@ -66,24 +69,24 @@
 .logistics_search .input-group .input {
     display: block;
     float: left;
-    width: 1096px;
-    height: 106px;
+    width: 66%;
+    height: 80px;
     background-color: rgb(248, 248, 248);
     border: 0;
-    line-height: 106px;
+    line-height: 80px;
     text-indent: 22px;
-    font-size: 24px;
+    font-size: 20px;
     color: #272727;
 }
 
 .logistics_search .input-group .btn {
     display: block;
-    float: left;
+    float: right;
     width: 248px;
-    height: 106px;
-    line-height: 106px;
+    height: 80px;
+    line-height: 80px;
     border-radius: 5px;
-    font-size: 30px;
+    font-size: 26px;
     color: #fff;
     background-color: rgb(3, 89, 176);
 }
@@ -117,7 +120,7 @@
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
-    width: 1400px;
+    width: 1200px;
     margin-top: 20px;
 }
 
@@ -152,26 +155,31 @@
 
 .one_left {
     float: left;
-    width: 475px;
+    width: 34%;
     margin-bottom: 12px;
 }
 
 .one_right {
     float: right;
-    width: 904px;
+    width: 64%;
     margin-bottom: 20px;
 }
 
 .one_right_2 {
-    width: 904px;
+    width: 100%;
     margin-top: 20px;
     overflow: hidden;
 }
 
-/*.one_right_2 .img{
-  width: 439px;
+.one_right_2 .img{
+  width: 49%;
 }
-*/
+.two_cen{
+    overflow: hidden;
+    width: 100%;
+}
+.two_left{width: 49%}
+.two_right{width: 49%}
 .result-body {
     overflow: hidden;
     padding: 40px 125px;

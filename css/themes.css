@@ -24,7 +24,7 @@
 /***************************宽屏样式 (end)***************************/
 
 /*************************** 导航栏 start ***************************/
-.default_nav_style{width: 100%;}
+.default_nav_style{width: 100%;margin-top: 19px;}
 .default_nav_style .n_item{float:left;}
 .default_nav_style .n_item>a{display: block;padding: 0 20px;}
 .default_nav_style .nav_sec{display: none; width:100%; position:absolute; left:0; top:100%; opacity: 0; padding-top:1px; z-index:999;overflow-x: hidden;overflow-y: auto;max-height: 460px;margin-top: 30px;box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.12);background: #fff;}
