@@ -423,22 +423,29 @@ margin-right: 14px;
 }
 .about .items .title{
 color: #0359b0;
-font-size: 32px;    
+font-size: 26px;    
 text-align: left;
 }
 .about .items .desc{
 color: #000000;
-font-size: 22px;
+font-size: 18px;
 }
 
 .about .items .item{
 overflow: hidden;
 }
+.about .address .icon_text{
+color: #000000;
+font-size: 18px;
+}
+.about .address img{
+    margin-right: 10px;
+}
 .about .items .item .address{
 float: left;
 width: 33%;
 color: #000000;
-font-size: 26px;
+font-size: 18px;
 }
 @media screen and (max-width: 600px){
 	.word_con{width: 90%}
@@ -450,7 +457,7 @@ font-size: 26px;
 float: none;
 width:100%;
 color: #000000;
-font-size: 24px;
+font-size: 18px;
 }
 }
 

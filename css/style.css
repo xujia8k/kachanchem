@@ -944,6 +944,8 @@ body .bx-wrapper .bx-pager, body .bx-wrapper .bx-controls-auto {
     max-height: 500px;
 }
 .about {
+}
+.bg_contactus{
     position: relative;
     background: url('../img/contactus/bg.png');
     background-position: bottom;
