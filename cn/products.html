@@ -70,9 +70,6 @@
             <div class="list ">
                 <a href="../cn/about.html" class="title">关于我们</a>
             </div>
-            <div class="list ">
-                <a href="../cn/contactus.html" class="title">联系我们</a>
-            </div>
         </div>
         <div class="son_nav trans"></div>
         <div class="nav_bg"></div>
@@ -157,9 +154,6 @@
                     </div>
                     <div class="n_item">
                         <a href="../cn/about.html" title="About Us">关于我们</a>
-                    </div>
-                    <div class="n_item">
-                        <a href="../cn/contactus.html" title="Contact Us">联系我们</a>
                     </div>
                 </div>
                 <script>
@@ -301,7 +295,7 @@
                 if (data.code == 0) {
                     for (var i = 0; i < data.data.page_datas.length; i++) {
                         var datas = data.data.page_datas[i];
-                        html += "<div class='box fl'><div class='imgbox pic_box'><a href='../cn/product-details.html?id=" + datas.id + "'><img src=" + datas.img_url + "></a></div><div class='name'><a href='../cn/product-details.html?id=" + datas.id + "'>" + datas.name + "</a></div><div class='cas'><a href='../cn/product-details.html?id=" + datas.id + "'>" + datas.cas + "</a></div></div>"
+                        html += "<div class='box fl'><div class='imgbox pic_box'><a href='../cn/product-details.html?id=" + datas.id + "'><img src=" + datas.product_img_url + "></a></div><div class='name'><a href='../cn/product-details.html?id=" + datas.id + "'>" + datas.name + "</a></div><div class='cas'><a href='../cn/product-details.html?id=" + datas.id + "'>" + datas.cas + "</a></div></div>"
                     }
                     $("#goods_list").html(html);
                     $(".cate_title").html(getUrlParam('category') || getUrlParam('name'));

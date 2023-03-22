@@ -71,9 +71,6 @@
             <div class="list ">
                 <a href="./about.html" class="title">About Us</a>
             </div>
-            <div class="list ">
-                <a href="./contactus.html" class="title">Contact Us</a>
-            </div>
         </div>
         <div class="son_nav trans"></div>
         <div class="nav_bg"></div>
@@ -159,9 +156,6 @@
                     <div class="n_item">
                         <a href="./about.html" title="About Us">About Us</a>
                     </div>
-                    <div class="n_item">
-                        <a href="./contactus.html" title="Contact Us">Contact Us</a>
-                    </div>
                 </div>
                 <script>
                     $('.small_nav_sec').parent().css({'position':'relative','overflow':'visible'});
@@ -214,7 +208,7 @@
         <div class="title">Products classification</div>
         <div class="classification_list"></div>
     </div>
-        <div class="advantage_products_title">Product classification</div>
+        <div class="advantage_products_title">Advantage products</div>
     <div class="advantage_products">
             <div style="width: 100%; overflow: hidden; position: relative;padding: 124px 0;">
                 <div class="bxslider_2">
@@ -223,8 +217,53 @@
             </div>
     </div>
     <div class="wrap">
+            <div class="contenter">
+                <div class="ueeshop_responsive_article_detail ">
+                    <div id="global_editor_contents" class="contents">
+                    </div>
+                    <div class="ueeshop_responsive_article_feedback" style="margin: 80px 0;">
+                        <div class="article_feedback_title">
+                            <div class="title">Message</div>
+                            <span></span>
+                            <div class="txt">If you have any suggestions or question for us.Please contact us.</div>
+                        </div>
+                        <form method="post" name="feedback" id="contact">
+                            <div class="rows input_rows">
+                                <input type="text" class="input" id="first_name" name="first_name" placeholder="Please Enter First Name" size="30" maxlength="100">
+                                <font class="fc_red">*</font>
+                            </div>
+                            <div class="rows input_rows">
+                                <input type="text" class="input" id="last_name" name="last_name" placeholder="Please Enter Last Name">
+                                <font class="fc_red">*</font>
+                            </div>
+                            <div class="rows input_rows">
+                                <input type="text" class="input" id="phone" name="phone" placeholder="Please Enter Phone Number">
+                                <font class="fc_red">*</font>
+                            </div>
+                            <div class="rows input_rows">
+                                <input type="text" class="input" id="email" name="email" placeholder="Please Enter Email">
+                                <font class="fc_red">*</font>
+                            </div>
+                            <div class="rows input_rows" style="width: 100%;">
+                                <input type="text" class="input" id="company_name" name="company_name" placeholder="Please Enter Compny name">
+                            </div>
+                            <div class="rows textarea_rows">
+                                <textarea name="message" id="message" class="form_area contents" placeholder="If you have any inquiries or question,please feel free to contact us." notnull=""></textarea>
+                            </div>
+                            <input type="text" class="dn" id="agent" name="agent" style="display:none;">
+                            <div class="clear"></div>
+                            <div class="rows"><input name="Submit" type="button" class="form_button" value="Submit" id="bt_contact"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="wrap">
         <div class="barnd_title">Our customers</div>
-          <div class="barnd_list">
+        <div class="" style="overflow:hidden;margin-left:auto;margin-right:auto; width:1920px; max-width:100%;">
+            <img src="./img/brand/bg.jpg" width="100%" alt="">
+        </div>
+          <!-- <div class="barnd_list">
               <div class="item">
                   <img src="./img/brand/1.png" alt="">
               </div>
@@ -282,7 +321,7 @@
               <div class="item">
                   <img src="./img/brand/19.png" alt="">
               </div>
-          </div>
+          </div> -->
     </div>
     <div class="win_alert" style="display:none;">
         <div class="win_close"><button class="close">
@@ -311,7 +350,6 @@
             <span>© KACHANCHEM All Rights Reserved.</span>
         </div>
     </div>
-    <!-- <input type="text" placeholder="Please input Product name or CAS No." class="prompt" onkeydown="javascript:if(event.keyCode==13) search_input(" .search_box="" input="" ');'="" autocomplete="off"> -->
     <script>
     //获取banner
     $.ajax({
@@ -392,49 +430,49 @@
         }
     });
 
-    // $("#bt_contact").click(function(e) {
-    //     $('#agent').val('Carrie');
-    //     var data = $("#contact").serialize();
-    //     var $first_name = $('#first_name').val();
-    //     var $last_name = $('#last_name').val();
-    //     var $phone = $('#phone').val();
-    //     var $email = $('#email').val();
-    //     var $company_name = $('#company_name').val();
-    //     var $message = $('#message').val();
-    //     if ($first_name == '') {
-    //         alert("First Name  Can not be empty")
-    //         return
-    //     } else if ($last_name == '') {
-    //         alert("Last Name  Can not be empty")
-    //         return
-    //     } else if ($phone == '') {
-    //         alert("Phone  Can not be empty")
-    //         return
-    //     } else if ($email == '') {
-    //         alert("Email  Can not be empty")
-    //         return
-    //     } else if ($company_name == '') {
-    //         alert("Company Name  Can not be empty")
-    //         return
-    //     } else if ($message == '') {
-    //         alert("Message  Can not be empty")
-    //         return
-    //     }
-    //     $.ajax({
-    //         url: BASE_URL + "/leave_words",
-    //         type: 'post',
-    //         dataType: 'json',
-    //         data: data,
-    //         error: function(xhr) {
-    //             // console.log("xhr---",xhr)
-    //         },
-    //         success: function(data) {
-    //             if (data.code == 0) {
-    //                 $('.win_alert').show()
-    //             }
-    //         }
-    //     });
-    // });
+    $("#bt_contact").click(function(e) {
+        $('#agent').val('Carrie');
+        var data = $("#contact").serialize();
+        var $first_name = $('#first_name').val();
+        var $last_name = $('#last_name').val();
+        var $phone = $('#phone').val();
+        var $email = $('#email').val();
+        var $company_name = $('#company_name').val();
+        var $message = $('#message').val();
+        if ($first_name == '') {
+            alert("First Name  Can not be empty")
+            return
+        } else if ($last_name == '') {
+            alert("Last Name  Can not be empty")
+            return
+        } else if ($phone == '') {
+            alert("Phone  Can not be empty")
+            return
+        } else if ($email == '') {
+            alert("Email  Can not be empty")
+            return
+        } else if ($company_name == '') {
+            alert("Company Name  Can not be empty")
+            return
+        } else if ($message == '') {
+            alert("Message  Can not be empty")
+            return
+        }
+        $.ajax({
+            url: BASE_URL + "/leave_words",
+            type: 'post',
+            dataType: 'json',
+            data: data,
+            error: function(xhr) {
+                // console.log("xhr---",xhr)
+            },
+            success: function(data) {
+                if (data.code == 0) {
+                    $('.win_alert').show()
+                }
+            }
+        });
+    });
     </script>
 </body>
 

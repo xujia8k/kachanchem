@@ -418,19 +418,23 @@ font-size: 26px;
 height: 34px;
 margin-right: 14px;
 }
-.ueeshop_responsive_article_detail>.contents>.items .title{
-color: #0359b0;
-font-size: 32px;
+.about .items{
+	padding-bottom: 50px;
 }
-.ueeshop_responsive_article_detail>.contents>.items .desc{
+.about .items .title{
+color: #0359b0;
+font-size: 32px;    
+text-align: left;
+}
+.about .items .desc{
 color: #000000;
 font-size: 22px;
 }
 
-.ueeshop_responsive_article_detail>.contents>.items .item{
+.about .items .item{
 overflow: hidden;
 }
-.ueeshop_responsive_article_detail>.contents>.items .item .address{
+.about .items .item .address{
 float: left;
 width: 33%;
 color: #000000;
@@ -438,11 +442,11 @@ font-size: 26px;
 }
 @media screen and (max-width: 600px){
 	.word_con{width: 90%}
-.ueeshop_responsive_article_detail>.contents>.items{
+.about .items{
 	margin-top: 30px;
 }
 	
-.ueeshop_responsive_article_detail>.contents>.items .item .address{
+.about .items .item .address{
 float: none;
 width:100%;
 color: #000000;

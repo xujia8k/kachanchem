@@ -71,9 +71,6 @@
             <div class="list ">
                 <a href="./about.html" class="title">About Us</a>
             </div>
-            <div class="list ">
-                <a href="./contactus.html" class="title">Contact Us</a>
-            </div>
         </div>
         <div class="son_nav trans"></div>
         <div class="nav_bg"></div>
@@ -159,9 +156,6 @@
                     <div class="n_item">
                         <a href="./about.html" title="About Us">About Us</a>
                     </div>
-                    <div class="n_item">
-                        <a href="./contactus.html" title="Contact Us">Contact Us</a>
-                    </div>
                 </div>
                 <script>
                     $('.small_nav_sec').parent().css({'position':'relative','overflow':'visible'});
@@ -201,6 +195,8 @@
         <div class="about_banner"><img src="./img/contactus/banner.png" width="100%" alt=""></div>
         <div class="about">
             <div class="content">
+                <div id="global_editor_contents" class="contents">
+                    </div>
                 <div>
                 <div class="company_profile">
                     <h3 class="title">Enterprise introduction</h3>
@@ -281,7 +277,21 @@
                 </button></div>
         </div>
     <script>
-
+        $.ajax({
+            url: BASE_URL + "/introductions",
+            type: 'get',
+            dataType: 'json',
+            success: function(data) {
+                if (data.code == 0) {
+                    var data = data.data.page_datas;
+                var html = '';
+                    for (var i = 0; i < data.length; i++) {
+                        html +='<div class="items"><p class="title">'+ data[i].name +'</p><div class="address"><p class="icon_text"><img src="img/address.png" alt="">Address</p><p class="desc">'+ data[i].address +'</p></div><div class="item"><div class="address"><p class="icon_text"><img src="img/phone.png" alt="">Tel</p><p class="desc">'+ data[i].tel +'</p></div><div class="address"><p class="icon_text"><img src="img/fax.png" alt="">Fax</p><p class="desc">'+ data[i].fax +'</p></div><div class="address"><p class="icon_text"><img src="img/email_icon.png" alt="">Email</p><p class="desc">'+ data[i].email +'</p></div></div></div>';
+                    }
+                    $("#global_editor_contents").html(html);
+                }
+            }
+        });
         $.ajax({
             url: BASE_URL + "/introductions",
             type: 'get',

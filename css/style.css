@@ -58,7 +58,7 @@ body{ background:#fff;width: 100%;height: 100%;max-width: 1920px;margin:0 auto;o
 
 
 /* .ueeshop_responsive_products_inquiry{display: flex;justify-content: center; align-items: center;} */
-.products .pro_left{width: 20.782%;}
+.products .pro_left{width: 24%;}
 .products .pro_cate{ margin-bottom: 25px; width: 100%;}
 .products .pro_cate .content{ margin-top: 24px;}
 .products .pro_cate .page_name{height: 38px;line-height: 38px; position: relative; font-size: 23px; color: #333; font-family: 'Oswald-Light', Arial;font-weight: bold;letter-spacing: 1px;}
@@ -87,8 +87,8 @@ body{ background:#fff;width: 100%;height: 100%;max-width: 1920px;margin:0 auto;o
     width: 100%;
     height: 100%;
     line-height: 48px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
     border-bottom: 1px solid #eaeaea;
     background: url(../img/cate_title_bg_icon0.png) no-repeat right center;
     box-sizing: border-box;}
@@ -161,9 +161,9 @@ position: absolute;
     text-transform: uppercase;
     letter-spacing: 3px;
     display: block;
-    font-size: 30px;
-    line-height: 28px;
-    padding-bottom: 75px;
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 40px;
     position: relative;
 }
 .product-list .banner .txt em:after{
@@ -189,14 +189,15 @@ position: absolute;
     left: 220px;
     color: #fff
 }
+
 .product_details_banner .txt em{
 letter-spacing: 3px;
     display: block;
-    font-size: 48px;
-    font-family: niveabold;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 24px;
     padding-bottom: 29px;
-    font-weight: 700;    font-style: normal;
+    font-weight: 700;   
+    font-style: normal;
 }
 .product_details_banner .txt em:after{
 content: "";
@@ -613,7 +614,7 @@ body .ueeshop_responsive_case_list .item .info{width:100%;padding-left:0}
         position: relative;
     height: auto;
     background: #fff;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     box-sizing: border-box;
     width: 23.403%;
@@ -628,10 +629,10 @@ body .ueeshop_responsive_case_list .item .info{width:100%;padding-left:0}
 .classification .classification_item span {
     display: block;
     position: absolute;
-    top: 130px;
-    left: 20px;
+    bottom: 40px;
+    left: 10px;
     color: #fff;
-    width: 275px;
+    width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -714,12 +715,12 @@ body .ueeshop_responsive_case_list .item .info{width:100%;padding-left:0}
 .ad_products{
     width: 100%;
     padding-top: 4.6875vw;
-background: url(../img/index/bg.png) no-repeat bottom center; z-index: 1;
+    background: url(../img/index/bg.png) no-repeat bottom center; z-index: 1;
 }
 .barnd_title{
- width: 100%;
+    width: 100%;
     height: 45px;
-    margin: 80px auto 50px;
+    margin: 0 auto 50px;
     line-height: 1.2;
     font-size: 30px;
     color: #0359b0;

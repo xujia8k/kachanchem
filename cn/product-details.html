@@ -70,9 +70,6 @@
             <div class="list ">
                 <a href="../cn/about.html" class="title">关于我们</a>
             </div>
-            <div class="list ">
-                <a href="../cn/contactus.html" class="title">联系我们</a>
-            </div>
         </div>
         <div class="son_nav trans"></div>
         <div class="nav_bg"></div>
@@ -158,9 +155,6 @@
                     <div class="n_item">
                         <a href="../cn/about.html" title="About Us">关于我们</a>
                     </div>
-                    <div class="n_item">
-                        <a href="../cn/contactus.html" title="Contact Us">联系我们</a>
-                    </div>
                 </div>
                 <script>
                     $('.small_nav_sec').parent().css({'position':'relative','overflow':'visible'});
@@ -210,7 +204,7 @@
                     </p>
                 </div>
                 <div class="gg02" id="productDetailsInfo">
-                    <div style="font-size: 24px; line-height:200%;font-weight: 400;" class="name">Name:Tretinoin</div>
+                    <div style="font-size: 16px; line-height:200%;font-weight: 400;" class="name">Name:<span></span></div>
                     <div style="font-size: 16px; line-height:200%;">
                         <span class="cas">CAS No.: 302-79-4</span><br>
                         <span class="mf">MF: C20H28O2</span><br>
@@ -370,7 +364,7 @@
                 }
                 CAS = data.data.cas;
                 $('#productDetailsImg').attr('src', data.data.img_url || '../img/no_pictures.png');
-                $('#productDetailsInfo .name').html(data.data.name)
+                $('#productDetailsInfo .name span').html(data.data.name)
                 $('#productDetailsInfo .cas').html(cas)
                 $('#productDetailsInfo .mf').html(mf)
                 $('#productDetailsInfo .mw').html(mw)
