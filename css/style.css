@@ -1056,7 +1056,7 @@ body .bx-wrapper .bx-pager, body .bx-wrapper .bx-controls-auto {
     right: 0;
     bottom: 0;
     left: 0;
-    width: 1200px;
+    width: 42%;
     max-height: 200px;
     text-align: center;
     margin: auto;
@@ -1127,7 +1127,7 @@ body .bx-wrapper .bx-pager, body .bx-wrapper .bx-controls-auto {
 
 @media screen and (max-width: 1600px) {
 
-     .index_banner .banner_content { width: 1200px }
+     .index_banner .banner_content { width: 42% }
     
     .index_banner .banner_content .title {
         font-size: 50px;
@@ -1140,13 +1140,9 @@ body .bx-wrapper .bx-pager, body .bx-wrapper .bx-controls-auto {
 
 @media screen and (max-width: 1440px) {
     
-     .index_banner .banner_content { width: 1000px }
+     .index_banner .banner_content { width: 50% }
 }
 
-@media screen and (max-width: 1360px) {
-
-     .index_banner .banner_content { width: 800px }
-}
 @media screen and (max-width: 991px){
 
     .index_banner .banner_content { display: none }
