@@ -198,7 +198,9 @@
             <div class="bx-wrapper index_banner" style="max-width: 1920px;">
                 <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative;">
                     <div class="bxslider_1" style="width: 415%; position: relative; transition-duration: 0s; transform: translate3d(-1930px, 0px, 0px);">
-                        <div class="search search_box"><input type="text" placeholder="Please input Product name or CAS No." class="prompt search_text2" autocomplete="off"> <i class="icon-search-big sub_btn2"></i><div class="results"></div></div>
+                        <div class="search search_box"><input type="text" placeholder="Please input Product name or CAS No." class="prompt search_text2" autocomplete="off"> <i class="icon-search-big sub_btn2"></i>
+                            <div class="results"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -208,62 +210,61 @@
         <div class="title">Products classification</div>
         <div class="classification_list"></div>
     </div>
-        <div class="advantage_products_title">Advantage products</div>
+    <div class="advantage_products_title">Advantage products</div>
     <div class="advantage_products">
-            <div style="width: 100%; overflow: hidden; position: relative;padding: 124px 0;">
-                <div class="bxslider_2">
-                    
-                </div>
+        <div style="width: 100%; overflow: hidden; position: relative;padding: 124px 0;">
+            <div class="bxslider_2">
             </div>
+        </div>
     </div>
     <div class="wrap">
-            <div class="contenter">
-                <div class="ueeshop_responsive_article_detail ">
-                    <div id="global_editor_contents" class="contents">
+        <div class="contenter">
+            <div class="ueeshop_responsive_article_detail ">
+                <div id="global_editor_contents" class="contents">
+                </div>
+                <div class="ueeshop_responsive_article_feedback" style="margin: 80px 0;">
+                    <div class="article_feedback_title">
+                        <div class="title" style="width: 100%;height: 45px;margin: 0 auto 50px;line-height: 1.2;font-size: 30px;color: #0359b0;font-weight: bold;text-align: center;">Message</div>
+                        <!-- <span></span> -->
+                        <div class="txt">If you have any inquiries , please contact us.</div>
                     </div>
-                    <div class="ueeshop_responsive_article_feedback" style="margin: 80px 0;">
-                        <div class="article_feedback_title">
-                            <div class="title">Message</div>
-                            <span></span>
-                            <div class="txt">If you have any suggestions or question for us.Please contact us.</div>
+                    <form method="post" name="feedback" id="contact">
+                        <div class="rows input_rows">
+                            <input type="text" class="input" id="first_name" name="first_name" placeholder="Please Enter First Name" size="30" maxlength="100">
+                            <font class="fc_red">*</font>
                         </div>
-                        <form method="post" name="feedback" id="contact">
-                            <div class="rows input_rows">
-                                <input type="text" class="input" id="first_name" name="first_name" placeholder="Please Enter First Name" size="30" maxlength="100">
-                                <font class="fc_red">*</font>
-                            </div>
-                            <div class="rows input_rows">
-                                <input type="text" class="input" id="last_name" name="last_name" placeholder="Please Enter Last Name">
-                                <font class="fc_red">*</font>
-                            </div>
-                            <div class="rows input_rows">
-                                <input type="text" class="input" id="phone" name="phone" placeholder="Please Enter Phone Number">
-                                <font class="fc_red">*</font>
-                            </div>
-                            <div class="rows input_rows">
-                                <input type="text" class="input" id="email" name="email" placeholder="Please Enter Email">
-                                <font class="fc_red">*</font>
-                            </div>
-                            <div class="rows input_rows" style="width: 100%;">
-                                <input type="text" class="input" id="company_name" name="company_name" placeholder="Please Enter Compny name">
-                            </div>
-                            <div class="rows textarea_rows">
-                                <textarea name="message" id="message" class="form_area contents" placeholder="If you have any inquiries or question,please feel free to contact us." notnull=""></textarea>
-                            </div>
-                            <input type="text" class="dn" id="agent" name="agent" style="display:none;">
-                            <div class="clear"></div>
-                            <div class="rows"><input name="Submit" type="button" class="form_button" value="Submit" id="bt_contact"></div>
-                        </form>
-                    </div>
+                        <div class="rows input_rows">
+                            <input type="text" class="input" id="last_name" name="last_name" placeholder="Please Enter Last Name">
+                            <font class="fc_red">*</font>
+                        </div>
+                        <div class="rows input_rows">
+                            <input type="text" class="input" id="phone" name="phone" placeholder="Please Enter Phone Number">
+                            <font class="fc_red">*</font>
+                        </div>
+                        <div class="rows input_rows">
+                            <input type="text" class="input" id="email" name="email" placeholder="Please Enter Email">
+                            <font class="fc_red">*</font>
+                        </div>
+                        <div class="rows input_rows" style="width: 100%;">
+                            <input type="text" class="input" id="company_name" name="company_name" placeholder="Please Enter Compny name">
+                        </div>
+                        <div class="rows textarea_rows">
+                            <textarea name="message" id="message" class="form_area contents" placeholder="If you have any inquiries or questions,please feel free to contact us." notnull=""></textarea>
+                        </div>
+                        <input type="text" class="dn" id="agent" name="agent" style="display:none;">
+                        <div class="clear"></div>
+                        <div class="rows"><input name="Submit" type="button" class="form_button" value="Submit" id="bt_contact"></div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
     <div class="wrap">
-        <div class="barnd_title"style="margin: 0 auto;">Our partners</div>
+        <div class="barnd_title">Our partners</div>
         <div class="" style="overflow:hidden;margin-left:auto;margin-right:auto; width:1400px; max-width:100%;">
             <img src="./img/brand/bg.jpg" width="100%" alt="">
         </div>
-          <!-- <div class="barnd_list">
+        <!-- <div class="barnd_list">
               <div class="item">
                   <img src="./img/brand/1.png" alt="">
               </div>
@@ -347,7 +348,26 @@
     </div>
     <div id="footer">
         <div class="footer_copy">
-            <span>© KACHANCHEM All Rights Reserved.</span>
+            <div class="wrap">
+                <div class="ovh">
+                    <div style="float: left;margin: 10px 0;width: 40%;"><span>Company name：Kachan Tech (Shanghai) Co., Ltd. </span></div>
+                    <div style="float: left;margin: 10px 0;width: 41.66667%;"><span>Mobile:+86 13472665816</span></div>
+                </div>
+                <!-- <div class="el-col el-col-6">
+                    <ul>
+                        <li>协议条款</li>
+                        <li>付款方式</li>
+                        <li>发货方式</li>
+                    </ul>
+                </div> -->
+                <div class="ovh">
+                    <div style="float: left;margin: 10px 0;width: 40%;"><span>Company address：Shanghai, China. </span></div>
+                    <div style="float: left;margin: 10px 0;width: 41.66667%;"><span><a href="mailto:sales@kachann.com">Email: sales@kachann.com / jerry@kachann.com </a></span></div>
+                </div>
+                <div style="display: flex; align-items: center;margin: 10px 0;"><span style="margin-right: 10px;">© KACHANCHEM All Rights Reserved.
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
     <script>
@@ -361,7 +381,7 @@
                 var data = data.data.page_datas;
                 var tem = '';
                 for (var i = 0; i < data.length; i++) {
-                    tem += "<div class='bx-clone'><img src='"+ data[i].img_url +"' alt='2' width='100%'><div class='banner_content'><div class='title'></div><div class='search search_box'><input type='text' placeholder='Please input Product name or CAS No.' class='prompt search_text2'  autocomplete='off' /> <i class='icon-search-big sub_btn2'></i><div class='results'></div></div></div></div>"  
+                    tem += "<div class='bx-clone'><img src='" + data[i].img_url + "' alt='2' width='100%'><div class='banner_content'><div class='title'></div><div class='search search_box'><input type='text' placeholder='Please input Product name or CAS No.' class='prompt search_text2'  autocomplete='off' /> <i class='icon-search-big sub_btn2'></i><div class='results'></div></div></div></div>"
                     // tem += "<div class='bx-clone'><img src='"+ data[i].img_url +"' alt='2' width='100%'><div class='banner_content'><div class='title'><p>" + data[i].title + "</p><p class='brief'>" + data[i].subtitle + "</p></div><div class='search search_box'><input type='text' placeholder='Please input Product name or CAS No.' class='prompt search_text2'  autocomplete='off' /> <i class='icon-search-big sub_btn2'></i><div class='results'></div></div></div></div>" 
                 }
                 $('.bxslider_1').html(tem)
@@ -405,7 +425,7 @@
                 var strVar = '';
                 var tag = 1;
                 for (var i = 0; i < data.length; i++) {
-                        strVar += "                        <a class=\"item\" href=\"./product-details.html?id=" + data[i].id + "\">\n";
+                    strVar += "                        <a class=\"item\" href=\"./product-details.html?id=" + data[i].id + "\">\n";
                     strVar += "                                <div class=\"ovh\">\n";
                     strVar += "                                    <img src=\"" + data[i].product_img_url + "\" class=\"img\">\n";
                     strVar += "                                    <div class=\"desc\">\n";
@@ -417,14 +437,14 @@
                     strVar += "                        <\/a>\n";
                 }
                 $('.bxslider_2').html(strVar)
-                $('.bxslider_2').bxSlider({ 
+                $('.bxslider_2').bxSlider({
                     slideWidth: 1200,
-                    moveSlides:3, 
-                    adaptiveHeight: true, 
-                    mode: 'horizontal', 
-                    pause: 5000, 
-                    controls: true, 
-                    autoHover: true 
+                    moveSlides: 3,
+                    adaptiveHeight: true,
+                    mode: 'horizontal',
+                    pause: 5000,
+                    controls: true,
+                    autoHover: true
                 });
             }
         }

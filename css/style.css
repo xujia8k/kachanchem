@@ -300,9 +300,9 @@ a:hover{text-decoration:none;}
 #footer .footer_nav_list .footer_nav_item{margin-right:55px;font-size:14px;}
 #footer .footer_nav_list .footer_nav_item:last-of-type{margin-right:0;}
 #footer .footer_nav_list .footer_nav_item a{color:#595959;text-transform:uppercase;line-height:30px;}
-#footer .footer_copy{display:flex;box-sizing:border-box;padding:30px 0;height:auto;min-height:80px;background:#212121;justify-content:center;align-items:center;}
-#footer .footer_copy span{display:block;display:block;margin:0 auto;width:90%;height:auto;color:#bfbfbf;text-align:center;line-height:30px;}
-#footer .footer_copy span a{color:#bfbfbf;}
+#footer .footer_copy{display:flex;box-sizing:border-box;padding:30px 0;height:auto;min-height:80px;background:#eee;justify-content:center;align-items:center;}
+#footer .footer_copy span{display:block;display:block;width:90%;height:auto;color:#000;font-size: 16px;text-align:left;line-height:30px;}
+#footer .footer_copy span a{color:#000;}
 
 .ueeshop_responsive_download_list ul li{overflow:hidden;display:flex;justify-content:space-between}
 .ueeshop_responsive_download_list ul li .name{height:48px;overflow:hidden;flex-shrink:1}
