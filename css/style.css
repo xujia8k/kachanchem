@@ -2,7 +2,7 @@
 *{font-family: "poppins", "SimSun", "PingFang SC", "Helvetica Neue", Helvetica, Arial;font-weight: lighter;}
 html, div{outline:0;}
 body{ background:#fff;width: 100%;height: 100%;max-width: 1920px;margin:0 auto;overflow-x: hidden;position: relative;}
-.wrap{width:1280px; margin:0 auto; zoom:1;}
+.wrap{width:1200px; margin:0 auto; zoom:1;}
 .text-over{text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 .w_1200 .w{width: 1200px;min-width: 1200px;margin: 0 auto;}
 .in_ad{position: relative; font-size: 0;}
@@ -301,7 +301,7 @@ a:hover{text-decoration:none;}
 #footer .footer_nav_list .footer_nav_item:last-of-type{margin-right:0;}
 #footer .footer_nav_list .footer_nav_item a{color:#595959;text-transform:uppercase;line-height:30px;}
 #footer .footer_copy{display:flex;box-sizing:border-box;padding:30px 0;height:auto;min-height:80px;background:#eee;justify-content:center;align-items:center;}
-#footer .footer_copy span{display:block;display:block;width:90%;height:auto;color:#000;font-size: 16px;text-align:left;line-height:30px;}
+#footer .footer_copy span{display:block;display:block;width:90%;height:auto;color:#000;text-align:left;line-height:30px;}
 #footer .footer_copy span a{color:#000;}
 
 .ueeshop_responsive_download_list ul li{overflow:hidden;display:flex;justify-content:space-between}
@@ -588,7 +588,7 @@ body .ueeshop_responsive_case_list .item .info{width:100%;padding-left:0}
 
 .classification{
     overflow: hidden;
-    max-width: 1400px;
+    max-width: 1200px;
     width: 92%;
     margin: 0 auto;
 }
