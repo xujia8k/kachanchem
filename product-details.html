@@ -201,7 +201,7 @@
             <div style="width:100%; clear:both; padding-top:34px;">
                 <div class="gg01">
                     <p style="text-align: center">
-                        <img src="./img/test.png" id="productDetailsImg">
+                        <img src="" id="productDetailsImg" onerror="this.src = './img/no_pictures.png'">
                     </p>
                 </div>
                 <div class="gg02" id="productDetailsInfo">
@@ -383,7 +383,7 @@
                     product_url += "<p><a href='" + data.data.test_report_url + "' download target='view_window'><i></i>" + data.data.cas + "-TEST_REPORT</a></p>";
                 }
                 CAS = data.data.cas;
-                $('#productDetailsImg').attr('src', data.data.img_url || './img/no_pictures.png');
+                $('#productDetailsImg').attr('src', data.data.product_img_url);
                 $('#productDetailsInfo .name span').html(data.data.name)
                 $('#productDetailsInfo .cas').html(cas)
                 $('#productDetailsInfo .mf').html(mf)
