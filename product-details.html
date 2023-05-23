@@ -207,10 +207,12 @@
                 <div class="gg02" id="productDetailsInfo">
                     <div style="font-size: 16px; line-height:200%;font-weight: 400;" class="name">Name:<span></span></div>
                     <div style="font-size: 16px; line-height:200%;">
-                        <span class="cas">CAS No.: 302-79-4</span><br>
-                        <span class="mf">MF: C20H28O2</span><br>
-                        <span class="mw">MW: 300.44</span><br>
-                        <span class="Purity">Purity: USP35</span> </div>
+                        <span class="cas">CAS No.: </span><br>
+                        <span class="mf">MF:</span><br>
+                        <span class="mw">MW: </span><br>
+                        <span class="Purity">Purity:</span><br>
+                        <span class="Price">Price: </span>
+                    </div>
                     <div style="font-size: 16px; line-height:200%; margin-top:24px;cursor: pointer;">
                         <a class="p_each">Send Inquiry</a>
                     </div>
@@ -372,6 +374,7 @@
                 let mf = "<span>MF:</span> " + data.data.mf || '';
                 let mw = "<span>MW:</span> " + data.data.mw || '';
                 let Purity = "<span>Purity:</span> " + data.data.purity || '';
+                let Price = "<span>Price:</span> " + data.data.reference_price || '';
                 let product_url = '';
                 if (data.data.coa_url) {
                     product_url += "<p><a href= '" + data.data.coa_url + "' download target='view_window'><i></i>" + data.data.cas + "-COA</a></p>";
@@ -389,6 +392,7 @@
                 $('#productDetailsInfo .mf').html(mf)
                 $('#productDetailsInfo .mw').html(mw)
                 $('#productDetailsInfo .Purity').html(Purity)
+                $('#productDetailsInfo .Price').html(Price)
                 $('#specification ul li:eq(0)').html(data.data.specification)
                 $('.product_url').html(product_url)
             }
