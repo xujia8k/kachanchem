@@ -395,7 +395,7 @@ body .ueeshop_responsive_case_list .item .info{width:100%;padding-left:0}
    border:1px solid #0359b0;
 }
 .ul-fq05 .inner{display:block;overflow:hidden;position:relative;z-index:10}
-.ul-fq05 .pic{padding-top:4%;position:relative;z-index:2;overflow:hidden}
+.ul-fq05 .pic{height: 240px;padding-top:4%;position:relative;z-index:2;overflow:hidden}
 .ul-fq05 .pic img{max-width:100%;height:auto;
     margin: 0 auto;
     display:block;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s}
@@ -1039,7 +1039,7 @@ body .bx-wrapper .bx-pager, body .bx-wrapper .bx-controls-auto {
     list-style: none;
     margin-bottom: 30px;    
     padding: 0 20px 0 0;
-    width: 47%;
+    width: 46%;
     float: left;
 }
 .ul-fq05 li:nth-child(2n) {
