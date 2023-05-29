@@ -271,7 +271,7 @@
                 for (var i = 0; i < data.length; i++) {
                     strVar += "<div class=\" list\">\n";
                     strVar += " <div class=\"first_cate \">\n";
-                    strVar += " <a href=\"./products.html?classify=" + encodeURIComponent(data[i]) + "\" class=\"category_7\" title=\"" + data[i] + "\">" + data[i] + "<\/a>\n";
+                    strVar += " <a href=\"./products.html?classify=" + data[i] + "\" class=\"category_7\" title=\"" + data[i] + "\">" + data[i] + "<\/a>\n";
                     strVar += "<\/div>\n";
                     strVar += "<\/div>\n";
                 }
@@ -288,6 +288,15 @@
         return null;
     }
 
+    function getUrlclassify() {
+        var url = location.search;
+   if (url.indexOf("?") != -1) {
+      var str = url.substr(1);
+      strs = str.split("=");
+      return  unescape(strs[1]); 
+   }
+        return null;
+    }
     function listinfo(page) {
         $("#list").html("");
         var category;
@@ -301,6 +310,7 @@
                 category = categoryList[0]
             }
         }
+        // console.log('-------',escape(getUrlclassify("classify")))
         $.ajax({
             url: BASE_URL + "/products",
             method: 'get',
@@ -308,7 +318,7 @@
                 limit: 16,
                 page: page,
                 q: query,
-                classify: encodeURIComponent(category)
+                classify: escape(getUrlclassify("classify"))
             },
             success: function(data) {
                 var html = '';
