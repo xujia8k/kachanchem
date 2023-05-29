@@ -271,7 +271,7 @@
                 for (var i = 0; i < data.length; i++) {
                     strVar += "<div class=\" list\">\n";
                     strVar += " <div class=\"first_cate \">\n";
-                    strVar += " <a href=\"./products.html?classify=" + data[i] + "\" class=\"category_7\" title=\"" + data[i] + "\">" + data[i] + "<\/a>\n";
+                    strVar += " <a href=\"./products.html?classify=" + encodeURIComponent(data[i]) + "\" class=\"category_7\" title=\"" + data[i] + "\">" + data[i] + "<\/a>\n";
                     strVar += "<\/div>\n";
                     strVar += "<\/div>\n";
                 }
@@ -308,7 +308,7 @@
                 limit: 16,
                 page: page,
                 q: query,
-                classify: category
+                classify: encodeURIComponent(category)
             },
             success: function(data) {
                 var html = '';
