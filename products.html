@@ -288,14 +288,14 @@
         return null;
     }
 
-    function getUrlclassify() {
-        var url = location.search;
-   if (url.indexOf("?") != -1) {
-      var str = url.substr(1);
-      strs = str.split("=");
-      return  unescape(strs[1]); 
-   }
-        return null;
+    function getUrlclassify(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
     }
     function listinfo(page) {
         $("#list").html("");
@@ -310,7 +310,7 @@
                 category = categoryList[0]
             }
         }
-        // console.log('-------',escape(getUrlclassify("classify")))
+        
         $.ajax({
             url: BASE_URL + "/products",
             method: 'get',
@@ -318,7 +318,7 @@
                 limit: 16,
                 page: page,
                 q: query,
-                classify: escape(getUrlclassify("classify"))
+                classify: decodeURI(getUrlclassify("classify"))
             },
             success: function(data) {
                 var html = '';
